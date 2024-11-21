@@ -1,1 +1,1 @@
-### PSEUDO Class Practice File
+### Pseudo class practice file
