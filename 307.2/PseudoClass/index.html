@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Declares the document type and specifies the language as English -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sets the character encoding for the document to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures the webpage is responsive and adapts to different screen sizes -->
+    <title>CSS Pseudo-classes Example</title>
+    <!-- Links the external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main heading for the webpage -->
+    <h1>CSS Pseudo-classes Examples</h1>
+
+    <!-- Section 1: Demonstrates pseudo-classes based on user interaction -->
+    <section>
+      <h2>User Interaction</h2>
+      <!-- A button that reacts when hovered -->
+      <button>Hover me!</button>
+      <!-- A text input field with a placeholder text, reacts when focused -->
+      <input type="text" placeholder="Focus on me" />
+    </section>
+
+    <!-- Section 2: Demonstrates pseudo-classes based on element structure or position -->
+    <section>
+      <h2>Structural/Positional</h2>
+      <ul>
+        <!-- First child of the list, styled with :first-child -->
+        <li>First item</li>
+        <!-- Second child of the list, styled with :nth-child(2) -->
+        <li>Second item</li>
+        <!-- Last child of the list, styled with :last-child -->
+        <li>Third item</li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Demonstrates pseudo-classes for form states -->
+    <section>
+      <h2>Form States</h2>
+      <form>
+        <!-- Checked checkbox, styled with :checked -->
+        <label> <input type="checkbox" checked /> Checked Checkbox </label>
+        <!-- Disabled radio button, styled with :disabled -->
+        <label>
+          <input type="radio" name="radio" disabled /> Disabled Radio Button
+        </label>
+        <!-- Required text input, styled with :required -->
+        <label> <input type="text" required /> Required Field </label>
+      </form>
+    </section>
+
+    <!-- Section 4: Demonstrates pseudo-classes for link states -->
+    <section>
+      <h2>Dynamic Links</h2>
+      <!-- A default, unvisited link styled with :link -->
+      <a href="#" class="link">Unvisited Link</a><br>
+      <!-- A link that simulates a visited state, styled with :visited -->
+      <a href="#" class="visited">Visited Link</a>
+    </section>
+
+    <!-- Section 5: Dynamic links with real URLs -->
+    <section>
+      <h2>Dynamic Links Option 2</h2>
+      <!-- A real link to Yahoo's homepage; unvisited links are styled with :link -->
+      <a href="https://www.yahoo.com" class="link" target="_blank">
+        Yahoo (Unvisited Link)
+      </a> <br>
+      <!-- A real link to Google's homepage; visited links are styled with :visited -->
+      <a href="https://www.google.com" class="visited" target="_blank">
+        Google (Visited Link)
+      </a>
+    </section>
+  </body>
+</html>
