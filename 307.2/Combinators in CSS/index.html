@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>COMBINATORS</h1>
+    <!-- Descendant Combinator Example -->
+    <div class="descendant-example">
+        <h2>Descendant Combinator</h2>
+        <div>
+            
+        <p>This paragraph is styled because it's inside a div <div>.</p>
+        <p>This paragraph is styled because it's inside a div <div>.</p>
+        <p>This paragraph is styled because it's inside a div <div>.</p>
+            
+        </div>
+    </div>
+
+    <!-- Child Combinator Example -->
+    <div class="child-example">
+        <h2>Child Combinator</h2>
+        <div>
+            <p>This paragraph is styled because it is a direct child of the div.</p>
+            <section>
+                <p>This paragraph is NOT styled because it is nested inside a section.</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Adjacent Sibling Combinator Example -->
+    <div class="adjacent-sibling-example">
+        <h2>Adjacent Sibling Combinator</h2>
+        <h1>Heading</h1>
+        <p>This paragraph is styled because it directly follows the heading.</p>
+        <p>This paragraph is NOT styled because it does not directly follow the heading.</p>
+    </div>
+
+    <!-- General Sibling Combinator Example -->
+    <div class="general-sibling-example">
+        <h2>General Sibling Combinator</h2>
+        <h1>Heading</h1>
+        <p>This paragraph is styled because it is a sibling of the heading and comes after it.</p>
+        <p>This paragraph is also styled because it is a sibling of the heading and comes after it.</p>
+    </div>
+</body>
+</html>

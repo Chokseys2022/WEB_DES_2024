@@ -1,0 +1,27 @@
+/* Descendant Combinator */
+.descendant-example div p {
+  color: purple;
+  font-style: italic;
+}
+/* Explanation: The paragraph inside the div (at any depth) is styled. */
+
+/* Child Combinator */
+.child-example div > p {
+  color: blue;
+  font-weight: bold;
+}
+/* Explanation: Only the paragraph that is a direct child of the div is styled. Nested paragraphs are not affected. */
+
+/* Adjacent Sibling Combinator */
+.adjacent-sibling-example h1 + p {
+  color: green;
+  text-decoration: underline;
+}
+/* Explanation: Only the first paragraph immediately following the heading is styled. */
+
+/* General Sibling Combinator */
+.general-sibling-example h1 ~ p {
+  color: orange;
+  font-size: 18px;
+}
+/* Explanation: All paragraphs that are siblings of the heading and come after it are styled. */
