@@ -1,0 +1,20 @@
+/* Class Selector */
+.highlight {
+    color: purple;
+    font-weight: bold;
+}
+/* Explanation: Any element with the class "highlight" will have purple bold text. */
+
+/* ID Selector */
+#unique {
+    color: blue;
+    font-style: italic;
+}
+/* Explanation: Any element with the ID "unique" will have blue italic text. */
+
+/* Class and ID Combination */
+.highlight#combo {
+    background-color: lightyellow;
+    border: 1px solid orange;
+}
+/* Explanation: The styles here apply only to elements that have both the "highlight" class and the "combo" ID. */
