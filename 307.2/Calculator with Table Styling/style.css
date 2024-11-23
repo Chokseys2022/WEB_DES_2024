@@ -1,0 +1,21 @@
+table {
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  border: 5px solid darkgreen;
+}
+
+th,
+td {
+  border: 1px solid red;
+}
+
+td:hover {
+  background-color: lightcoral;
+  color: white;
+}
+
+.topRow {
+  height: 20%;
+  text-align: right;
+}
