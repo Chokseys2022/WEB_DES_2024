@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property Examples</title>
+    <link rel="stylesheet" href="displays.css">
+</head>
+<body>
+    <h1>CSS Display Property Examples</h1>
+
+    <!-- Display Outside Values -->
+    <h3>Display: block</h3>
+    <p>The `block` display value makes an element take up the full width and start on a new line. Examples include `<div>` and `<p>` elements.</p>
+    <div id="block">I am block</div>
+
+    <h3>Display: inline</h3>
+    <p>The `inline` display value keeps the element inline, only as wide as its content. It does not force a new line.</p>
+    <span id="inline">I am inline</span>
+
+    <h3>Display: run-in</h3>
+    <p>The `run-in` display value is context-sensitive, acting as either inline or block depending on the parent element's context.</p>
+    <p id="run-in">I am run-in</p>
+
+    <!-- Display Inside Values -->
+    <h3>Display: flow</h3>
+    <p>The `flow` value is the default layout behavior for block-level elements, following the normal document flow.</p>
+    <div id="flow">I am flow</div>
+
+    <h3>Display: flow-root</h3>
+    <p>The `flow-root` value establishes a new block formatting context, useful for clearing floats.</p>
+    <div id="flow-root">I am flow-root</div>
+
+    <h3>Display: table</h3>
+    <p>The `table` value makes the element behave like a table container, which can include rows and cells.</p>
+    <div id="table">
+        <div>Table Cell 1</div>
+        <div>Table Cell 2</div>
+    </div>
+
+    <h3>Display: flex</h3>
+    <p>The `flex` value enables the Flexbox layout, allowing child elements to align along a flexible axis with customizable spacing.</p>
+    <div id="flex">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+    </div>
+
+    <h3>Display: grid</h3>
+    <p>The `grid` value activates the CSS Grid layout, creating a structured layout with rows and columns.</p>
+    <div id="grid">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+    </div>
+
+    <h3>Display: ruby</h3>
+    <p>The `ruby` value is used for ruby annotations, commonly seen in East Asian texts. It allows combining base characters and annotations.</p>
+    <div id="ruby">
+        <ruby>
+            漢 <rt>kan</rt>
+        </ruby>
+    </div>
+
+    <!-- Display Outside and Inside -->
+    <h3>Display: block flow</h3>
+    <p>The `block flow` combination sets the element as a block-level container using the normal flow layout. This is the default for most block elements.</p>
+    <div id="block-flow">Block Flow</div>
+
+    <h3>Display: inline table</h3>
+    <p>The `inline table` value allows the element to behave like a table but remain inline with other elements.</p>
+    <div id="inline-table">Inline Table</div>
+
+    <h3>Display: flex run-in</h3>
+    <p>The `flex run-in` value is experimental and combines Flexbox layout with context-sensitive run-in behavior.</p>
+    <div id="flex-run-in">Flex Run-In</div>
+
+    <!-- Display Box Values -->
+    <h3>Display: contents</h3>
+    <p>The `contents` value removes the element’s box but keeps its child elements in the layout, as if the parent doesn’t exist.</p>
+    <div id="contents">Contents Example</div>
+
+    <h3>Display: none</h3>
+    <p>The `none` value hides the element completely, removing it from the layout and the document flow.</p>
+    <div id="none">This will not be visible</div>
+
+    <!-- Display Global Values -->
+    <h3>Display: inherit</h3>
+    <p>The `inherit` value makes the element take its display value from its parent element.</p>
+    <div id="inherit">Inherit Example</div>
+
+    <h3>Display: initial</h3>
+    <p>The `initial` value resets the element’s display property to its default, as defined by the browser.</p>
+    <div id="initial">Initial Example</div>
+
+    <h3>Display: unset</h3>
+    <p>The `unset` value acts as `inherit` if the parent has a defined value or `initial` if it doesn’t.</p>
+    <div id="unset">Unset Example</div>
+
+    <!-- Display Internal Values -->
+    <h3>Display: table-header-group</h3>
+    <p>The `table-header-group` value defines the header section of a table, grouping rows within `<thead>`.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1 Col 1</td>
+                <td>Row 1 Col 2</td>
+            </tr>
+            <tr>
+                <td>Row 2 Col 1</td>
+                <td>Row 2 Col 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

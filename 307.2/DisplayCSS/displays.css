@@ -1,0 +1,99 @@
+/* Display Outside Values */
+#block {
+    display: block; /* Element takes up the full width and starts on a new line. Common for <div> and <p>. */
+    background: lightblue; /* Adds a light blue background to distinguish it visually. */
+}
+#inline {
+    display: inline; /* Element remains inline, sizing itself to its content and not starting on a new line. */
+    background: lightcoral; /* Adds a coral background to visually differentiate it. */
+}
+#run-in {
+    display: run-in; /* Behaves like block or inline depending on the surrounding elements. Rarely used. */
+    background: lightgreen; /* Adds a green background for visualization. */
+}
+
+/* Display Inside Values */
+#flow {
+    display: flow; /* Default layout behavior for block elements in the normal document flow. */
+    background: lightyellow; /* Adds a yellow background to distinguish it. */
+}
+#flow-root {
+    display: flow-root; /* Creates a new block formatting context, useful for containing floats. */
+    background: lightpink; /* Adds a pink background for clarity. */
+}
+#table {
+    display: table; /* Behaves like a table, with rows and cells for layout. */
+    border: 1px solid black; /* Adds a border to resemble a table structure. */
+}
+#flex {
+    display: flex; /* Activates Flexbox layout, aligning child elements along a flexible axis. */
+    gap: 10px; /* Adds space between the child elements. */
+    background: lavender; /* Gives a soft lavender background. */
+}
+#grid {
+    display: grid; /* Enables CSS Grid layout for structured rows and columns. */
+    gap: 10px; /* Adds spacing between grid items. */
+    background: lightcyan; /* Provides a cyan background. */
+}
+#ruby {
+    display: ruby; /* Displays ruby annotations (common in East Asian languages). */
+    font-size: larger; /* Increases font size for clarity. */
+}
+
+/* Display Outside and Inside */
+#block-flow {
+    display: block flow; /* Combines block display type with flow layout. Default for block elements. */
+    background: lightgray; /* Adds a gray background for visibility. */
+}
+#inline-table {
+    display: inline table; /* Combines inline behavior with table layout. */
+    border: 1px solid black; /* Adds a table-like border for structure. */
+}
+#flex-run-in {
+    display: flex run-in; /* Experimental combination of flex layout and run-in behavior. */
+    background: lightgoldenrodyellow; /* Gives a soft yellow background for distinction. */
+}
+
+/* Display Box Values */
+#contents {
+    display: contents; /* The box itself disappears, but its child elements remain visible. */
+    color: purple; /* Sets text color to purple for visualization. */
+}
+#none {
+    display: none; /* The element is removed from the layout and not visible at all. */
+}
+
+/* Display Global Values */
+#inherit {
+    display: inherit; /* The display property is inherited from the parent element. */
+    background: lightsteelblue; /* Adds a steel blue background for visualization. */
+}
+#initial {
+    display: initial; /* Resets the display property to its default value. */
+    background: lightseagreen; /* Adds a sea green background for clarity. */
+}
+#unset {
+    display: unset; /* Acts as `inherit` or `initial`, depending on the parent. */
+    background: lightpink; /* Adds a pink background for visibility. */
+}
+
+/* Display Internal Values for Table */
+thead {
+    display: table-header-group; /* Defines the header row group for a table. */
+    background: lightblue; /* Adds a blue background to table headers. */
+}
+tbody {
+    display: table-row-group; /* Defines the body row group for a table. */
+}
+tr {
+    display: table-row; /* Represents a single row in a table. */
+}
+td {
+    display: table-cell; /* Represents a cell in a table. */
+    border: 1px solid gray; /* Adds a border to cells for structure. */
+}
+th {
+    display: table-cell; /* Represents a header cell in a table. */
+    font-weight: bold; /* Makes text in header cells bold. */
+    border: 1px solid gray; /* Adds a border to header cells for visibility. */
+}

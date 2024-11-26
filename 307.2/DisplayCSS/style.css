@@ -1,0 +1,60 @@
+/* Block example */
+.block-example {
+  display: block;
+  width: 100%;
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Inline example */
+.inline-example {
+  display: inline;
+  background-color: lightcoral;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+/* Inline-block example */
+.inline-block-example {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background-color: lightgreen;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Flex example */
+.flex-container {
+  display: flex;
+  gap: 10px;
+  background-color: lightgray;
+  padding: 10px;
+}
+.flex-container div {
+  background-color: lightpink;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+/* Grid example */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: lightyellow;
+  padding: 10px;
+}
+.grid-container div {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+/* None example */
+.none-example {
+  display: none;
+}
