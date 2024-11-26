@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .grid-container {
+        display: grid; /* Enables grid layout */
+        /*grid-template-columns: repeat(4, 100px); /* Four equal columns of 100px each */
+        /*grid-template-columns: 200px 175px 100px; /* Three fixed-width columns */
+        /*grid-template-columns: 80% 10%; /* Two equal columns, each taking half the width */
+        /*grid-template-columns: auto auto auto; /* Columns sized to fit their content */
+        /*grid-template-columns: 2fr 1fr; /* First column gets twice the space of the second */
+        /*grid-template-columns: 200px 1fr 2fr; /* MIXED UNITS - Fixed, flexible, and proportional columns */
+        /*grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Min 150px, max equal space */
+        /*grid-template-columns: fit-content(200px) fit-content(300px); /* Max sizes */
+        /*grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns * Columns are created dynamically to fill the container.
+                                                                          Each column is at least 150px wide and expands as needed.*/
+        grid-template-columns: 100px 2fr 3fr auto; /* Combination of fixed and flexible * The first column is fixed at 100px.
+                                         The second and third columns take proportional space.The last column sizes itself based on its content*/
+        gap: 10px; /* Space between grid items */
+      }
+      .grid-item {
+        background-color: lightgreen;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+  </body>
+</html>
