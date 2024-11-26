@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property Examples</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <h1>CSS Position Property Examples</h1>
+
+    <!-- Static Position -->
+    <h3>Position: static</h3>
+    <p>The `static` value is the default positioning. The element is positioned according to the normal document flow.</p>
+    <div class="static">I am static</div>
+
+    <!-- Relative Position -->
+    <h3>Position: absolute (with relative parent)</h3>
+<p>The `absolute` value positions the element relative to its nearest positioned ancestor (a parent with `position: relative` in this case). This prevents it from overlapping unrelated elements.</p>
+<div class="relative-parent">
+    <div class="absolute">I am absolute</div>
+</div>
+
+    <!-- Absolute Position -->
+    <h3>Position: absolute</h3>
+    <p>The `absolute` value positions the element relative to its nearest positioned ancestor (other than `static`) or the document if no ancestor is positioned.</p>
+    <div class="absolute">I am absolute</div>
+
+    <!-- Fixed Position -->
+    <h3>Position: fixed</h3>
+    <p>The `fixed` value positions the element relative to the viewport, so it stays in the same place even when the page is scrolled.</p>
+    <div class="fixed">I am fixed</div>
+
+    <!-- Sticky Position -->
+    <h3>Position: sticky</h3>
+    <p>The `sticky` value toggles between `relative` and `fixed`, depending on the scroll position. It sticks to a defined position until the containing block is scrolled out of view.</p>
+    <div class="sticky">I am sticky</div>
+
+    <!-- Z-Index -->
+    <h3>Z-Index Example</h3>
+    <p>The `z-index` property controls the stack order of elements. Higher values appear in front of lower ones. This example shows overlapping elements with different `z-index` values.</p>
+    <div class="z-index parent">
+        Parent
+        <div class="z-index child">Child</div>
+    </div>
+</body>
+</html>
