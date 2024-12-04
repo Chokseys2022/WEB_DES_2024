@@ -67,13 +67,11 @@ body {
 }
 
 hr {
-  border: none; 
-  height: 2px;  
-  background-color: rgb(53, 52, 52); 
+  border: none;
+  height: 2px;
+  background-color: rgb(53, 52, 52);
   margin: 2em 0 1em 0;
-  
 }
-
 
 .employment-sect h3 {
   margin-top: 5em;
@@ -105,4 +103,15 @@ hr {
   margin-top: 10px;
   padding-left: 15px;
   color: grey;
+}
+
+
+.skills-sect h4 {
+  color: var(--text-header-color);
+}
+
+.skills-sect ul {
+  margin-top: 10px;
+  color: var(--text-normal-color);
+  padding-left: 9px;
 }
