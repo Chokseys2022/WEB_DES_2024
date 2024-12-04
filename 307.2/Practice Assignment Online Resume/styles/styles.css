@@ -65,3 +65,44 @@ body {
   margin-top: 1.25em;
   color: var(--text-normal-color);
 }
+
+hr {
+  border: none; 
+  height: 2px;  
+  background-color: rgb(53, 52, 52); 
+  margin: 2em 0 1em 0;
+  
+}
+
+
+.employment-sect h3 {
+  margin-top: 5em;
+  padding-left: 15px;
+  color: var(--text-header-color);
+  background-color: var(--text-normal-color);
+}
+
+.employment-sect h4 {
+  margin-top: 10px;
+  padding-left: 15px;
+  color: var(--text-normal-color);
+}
+
+.employment-sect span {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  padding-left: 15px;
+  color: var(--text-normal-color);
+}
+
+.employment-sect h6 {
+  margin-top: 10px;
+  padding-left: 15px;
+  color: var(--text-normal-color);
+}
+.employment-sect p {
+  margin-top: 10px;
+  padding-left: 15px;
+  color: grey;
+}
