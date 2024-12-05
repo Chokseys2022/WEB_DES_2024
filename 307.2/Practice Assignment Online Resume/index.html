@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>Practice Resume</title>
-  </head>
+    <title>Online Resume</title>
 
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
   <body>
     <div class="resume-container">
       <div class="summary-container">
         <div class="cards-container">
           <div class="info-card">
-            <img src="assets/profile.png" alt="my picture" class="my-pic" />
+            <img src="./assets/profile.png" alt="mypicture" class="mypict" />
             <div class="title-container">
-              <h2>Sonal Choksey</h2>
-              <h4>Student</h4>
+              <h2>Sonal</h2>
+              <h4>Web Developer</h4>
             </div>
           </div>
           <div class="contact-card">
@@ -33,110 +33,63 @@
           pariatur perferendis facere excepturi enim amet dicta tenetur rerum,
           quis illum obcaecati blanditiis esse!
         </p>
-        <hr />
-        <!-- Employment Section -->
-        <div class="detail-sect">
-          <div class="employment-sect">
-            <h3>EMPLOYMENT</h3>
-            <div>
-              <h4>WVUSD</h4>
-              <span>2000-2005</span>
-              <h6>CEO</h6>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                dolorum molestiae repudiandae, cumque sunt odio in architecto
-                animi explicabo, eum, obcaecati et asperiores laborum culpa
-                saepe aut. Beatae, consectetur debitis.
-              </p>
-
-              <h4>DBUSD</h4>
-              <span>2005-2010</span>
-              <h6>CFO</h6>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                dolorum molestiae repudiandae, cumque sunt odio in architecto
-                animi explicabo, eum, obcaecati et asperiores laborum culpa
-                saepe aut. Beatae, consectetur debitis.
-              </p>
-            </div>
-          </div>
-          <!-- Education Section -->
-          <div class="detail-sect">
-            <div class="employment-sect">
-              <h3>EDUCATION</h3>
-              <div>
-                <h4>VTS</h4>
-                <span>1980-1992</span>
-                <h6>HS</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis dolorum molestiae repudiandae, cumque sunt odio in
-                  architecto animi explicabo, eum, obcaecati et asperiores
-                  laborum culpa saepe aut. Beatae, consectetur debitis.
-                </p>
-
-                <h4>JHC</h4>
-                <span>1992-1996</span>
-                <h6>University</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis dolorum molestiae repudiandae, cumque sunt odio in
-                  architecto animi expulcabo, eum, obcaecati et asperiores
-                  laborum culpa saepe aut. Beatae, consectetur debitis.
-                </p>
-
-                <!-- Skills Section -->
-                <div class="skills-sect">
-                  <h3>PROGRAMMING SKILLS</h3>
-                  <ul>
-                    <ul>
-                      Wordpress
-                    </ul>
-                    <ul>
-                      PHP
-                    </ul>
-                    <ul>
-                      HTML
-                    </ul>
-                    <ul>
-                      CSS
-                    </ul>
-                    <ul>
-                      JavaScript
-                    </ul>
-                  </ul>
-                  <div class="skills-sect">
-                    <h3>GRAPHIC SKILLS</h3>
-                    <ul class="graphic-skills">
-                      <ul style="color: #3ba7d5">
-                        Adobe Photoshop
-                      </ul>
-                      <ul style="color: #69a332">
-                        Adobe Illustrator
-                      </ul>
-                      <ul style="color: #f2b632">
-                        Adobe Indesign
-                      </ul>
-                      <ul style="color: #d54b3b">
-                        Corel Draw
-                      </ul>
-                      <ul style="color: #7f7f7f">
-                        3D Max
-                      </ul>
-                    </ul>
-                    <h3>LANGUAGE SKILLS</h3>
-                    <div class="language-skills">
-                      <p>English</p>
-                      <p>Hindi</p>
-                      <p>Spanish</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+
+    <main class="container">
+      <section class="left-column">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Node.js</li>
+          <li>Git & GitHub</li>
+          <li>Responsive Web Design</li>
+        </ul>
+
+        <h2>Education</h2>
+        <p>
+          <strong>University of Example</strong> - Bachelor of Science in
+          Computer Science, 2018 - 2022
+        </p>
+        <p>Graduated with honors</p>
+
+        <h2>Certifications</h2>
+        <ul>
+          <li>Certified Web Developer - XYZ Institute</li>
+          <li>JavaScript Essentials - ABC Academy</li>
+        </ul>
+      </section>
+
+      <section class="right-column">
+        <h2>Work Experience</h2>
+        <div class="job">
+          <h3>Frontend Developer</h3>
+          <p><strong>Tech Company</strong> - Jan 2023 - Present</p>
+          <ul>
+            <li>
+              Developed and maintained company website using React and CSS
+            </li>
+            <li>
+              Collaborated with the design team to implement user-friendly
+              interfaces
+            </li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Junior Web Developer</h3>
+          <p><strong>Web Solutions</strong> - Jun 2022 - Dec 2022</p>
+          <ul>
+            <li>
+              Worked on frontend development using HTML, CSS, and JavaScript
+            </li>
+            <li>Optimized website performance and fixed bugs</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>LinkedIn | GitHub | Portfolio</p>
+    </footer>
   </body>
 </html>

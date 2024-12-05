@@ -38,7 +38,7 @@ body {
   gap: 1em;
 }
 
-.my-pic {
+.mypict {
   max-width: 64px;
 }
 
@@ -66,52 +66,103 @@ body {
   color: var(--text-normal-color);
 }
 
-hr {
-  border: none;
-  height: 2px;
-  background-color: rgb(53, 52, 52);
-  margin: 2em 0 1em 0;
+/* General Styling */
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #19191b;
+  color: #333;
 }
 
-.employment-sect h3 {
-  margin-top: 5em;
-  padding-left: 15px;
-  color: var(--text-header-color);
-  background-color: var(--text-normal-color);
+h1,
+h2,
+h3 {
+  color: #75719d;
 }
 
-.employment-sect h4 {
-  margin-top: 10px;
-  padding-left: 15px;
-  color: var(--text-normal-color);
-}
-
-.employment-sect span {
+.info-cont {
   display: flex;
-  justify-content: end;
-  margin-top: 10px;
-  padding-left: 15px;
-  color: var(--text-normal-color);
+}
+.container {
+  display: flex;
+
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-.employment-sect h6 {
-  margin-top: 10px;
-  padding-left: 15px;
-  color: var(--text-normal-color);
-}
-.employment-sect p {
-  margin-top: 10px;
-  padding-left: 15px;
-  color: grey;
+.cards-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-
-.skills-sect h4 {
-  color: var(--text-header-color);
+header {
+  background-color: #aed5ef;
+  color: rgb(220, 17, 17);
+  padding: 30px 0;
+  text-align: center;
 }
 
-.skills-sect ul {
-  margin-top: 10px;
-  color: var(--text-normal-color);
-  padding-left: 9px;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.contact-info {
+}
+.contact-info p {
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.left-column,
+.right-column {
+  width: 48%;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: rgb(141, 160, 177);
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
