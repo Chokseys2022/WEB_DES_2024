@@ -15,21 +15,15 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
+  color: var(--text-normal-color);
   padding: 2em;
 }
 
 .resume-container {
   background-color: var(--content-color);
   padding: 1em;
-}
-
-/* .summary-container {} */
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .info-card {
@@ -67,43 +61,29 @@ body {
 }
 
 /* General Styling */
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #19191b;
-  color: #333;
-}
-
 h1,
-h2,
 h3 {
   color: #75719d;
 }
 
-.info-cont {
-  display: flex;
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: var(--accent-color-blue);
 }
+
 .container {
   display: flex;
-
-  width: 80%;
   margin: 0 auto;
   max-width: 1200px;
+  width: 80%;
 }
 
-.cards-cont {
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-header {
-  background-color: #aed5ef;
-  color: rgb(220, 17, 17);
-  padding: 30px 0;
-  text-align: center;
+  gap: 1em;
 }
 
 header h1 {
@@ -111,12 +91,6 @@ header h1 {
   font-size: 2.5rem;
 }
 
-header p {
-  font-size: 1.2rem;
-}
-
-.contact-info {
-}
 .contact-info p {
   font-size: 1rem;
 }
@@ -124,17 +98,15 @@ header p {
 main {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   margin-top: 40px;
 }
 
 .left-column,
 .right-column {
-  width: 48%;
-}
-
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
+  width: 50%;
+  padding: 3rem;
+  background-color: var(--content-color);
 }
 
 ul {
@@ -145,7 +117,7 @@ ul {
 ul li {
   font-size: 1rem;
   margin-bottom: 8px;
-  color: rgb(141, 160, 177);
+  color: var(--text-normal-color);
 }
 
 .job {
@@ -159,10 +131,16 @@ ul li {
 
 footer {
   text-align: center;
-  background-color: #3498db;
+  background-color: var(--content-color);
   color: white;
   padding: 20px;
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.summary-container {
+  margin-top: 2em;
+  color: var(--text-normal-color);
+  font-size: 1rem;
 }
