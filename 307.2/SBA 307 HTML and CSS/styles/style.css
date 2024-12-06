@@ -5,9 +5,9 @@
 }
 
 :root {
-  --header-color: #1b2937;
-  --content-color: #282828;
-  --accent-color-yellowish: #ceb385;
+  --header-color: #00070d;
+  --content-color: #f1ebeb;
+  --accent-color-beigeish:#846d62;
   --accent-color-brownish: #5a4d42;
   --text-header-color: #f5fbfc;
   --text-normal-color: #7f7f7f;
@@ -70,7 +70,7 @@ nav {
 }
 
 nav .logo {
-  max-width: 70px;
+  max-width: 80px;
 }
 
 nav ul {
