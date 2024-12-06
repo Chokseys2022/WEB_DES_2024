@@ -7,7 +7,7 @@
 :root {
   --header-color: #00070d;
   --content-color: #f1ebeb;
-  --accent-color-beigeish:#846d62;
+  --accent-color-beigeish: #846d62;
   --accent-color-brownish: #5a4d42;
   --text-header-color: #f5fbfc;
   --text-normal-color: #7f7f7f;
@@ -43,7 +43,7 @@ body {
 }
 
 .main-cont .learn-more:hover {
-  background: var(--accent-color-yellowish);
+  background: var(--accent-color-beigeish);
 }
 
 .about-content {
@@ -51,8 +51,6 @@ body {
   min-height: 100vh;
   padding: 20px;
   background: var(--text-normal-color);
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -84,10 +82,37 @@ nav ul li a {
   text-decoration: none;
 }
 
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  width: 100%;
+  max-width: 600px;
+}
+
 .form-cont {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh;
+  padding: 2em;
   background: var(--text-normal-color);
+  }
+
+.contact-button {
+  padding: 0.7em;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.contact-button:hover{
+  background-color: green;
 }
 
 footer {
@@ -97,15 +122,17 @@ footer {
   color: var(--text-header-color); /* Adjusted for better contrast */
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   text-decoration: underline;
 }
 
 p::first-letter {
-  color: var(--accent-color-yellowish);
+  color: var(--accent-color-beigeish);
   font-size: xx-large;
 }
