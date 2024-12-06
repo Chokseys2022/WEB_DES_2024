@@ -104,15 +104,16 @@ form {
 
 .contact-button {
   padding: 0.7em;
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: darkgray;
   border: none;
   border-radius: 4px;
   width: 300px;
 }
 
 .contact-button:hover {
-  background-color: green;
+  background-color: darkgray;
+  color: black;
 }
 
 footer {
