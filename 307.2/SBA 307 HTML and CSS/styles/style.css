@@ -28,7 +28,7 @@ body {
   text-align: center;
   padding: 50px;
   background: var(--text-normal-color);
-  color: white;
+  color: var(--text-header-color);
 }
 
 .main-cont .learn-more {
@@ -82,16 +82,16 @@ nav ul li a {
   text-decoration: none;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
-  gap: 0.2em;
+  gap: 0.1em;
   width: 100%;
   max-width: 600px;
 }
 
 .form-cont {
-  flex:1;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +100,7 @@ form{
   min-height: 100vh;
   padding: 2em;
   background: var(--text-normal-color);
-  }
+}
 
 .contact-button {
   padding: 0.7em;
@@ -108,10 +108,10 @@ form{
   color: white;
   border: none;
   border-radius: 4px;
-  width: 100%;
+  width: 300px;
 }
 
-.contact-button:hover{
+.contact-button:hover {
   background-color: green;
 }
 
@@ -119,12 +119,13 @@ footer {
   text-align: center;
   padding: 10px;
   background: var(--header-color);
-  color: var(--text-header-color); /* Adjusted for better contrast */
+  color: #b0c4de;
 }
 
 a:link,
 a:visited {
   text-decoration: none;
+  color: var(--accent-color-beigeish);
 }
 
 a:hover,
