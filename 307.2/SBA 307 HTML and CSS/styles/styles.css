@@ -34,7 +34,7 @@ body {
   color: var(--text-header-color);
 }
 
-.main-cont .learn-more {
+.newsletter-cont .signup-cont {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -50,9 +50,9 @@ p::first-letter {
   font-size: xx-large;
 }
 
-.main-cont .learn-more:hover {
+.newsletter-cont .signup-cont:hover {
   background: var(--accent-color-beigeish);
-}
+  }
 
 /* Header & Navigation */
 header {
@@ -87,6 +87,20 @@ nav ul li a {
 
 li {
   list-style: none;
+}
+
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+aside > p {
+  margin: 0.5rem;
 }
 
 

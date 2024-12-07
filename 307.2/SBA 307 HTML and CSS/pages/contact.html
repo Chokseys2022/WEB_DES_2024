@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
 
     <title>Contact Us</title>
   </head>
@@ -25,37 +25,77 @@
         </ul>
       </nav>
     </header>
-
-    <div class="form-cont">
-      <h1>Contact Us Today!</h1>
-      <p>We’re here to answer your questions and review any RFPs you may have. Reach out now!</p><br>
-  
-      <form>
-        <label for="fname">First name:</label><br />
-        <input type="text" id="fname" name="fname" /><br />
-        <label for="lname">Last name:</label><br />
-        <input type="text" id="lname" name="lname" /><br />
-        <label for="email">Email:</label><br />
-        <input type="email id=email" email="email" /><br />
-        <button type="submit" class="contact-button">Submit</button>
-      </form><br>
-
-      <section class="contact-info-section">
-            <p>
-      We're always here to help. Call us anytime for a free consultation or a quote!
-    </p>
-    <p style="margin-top: 10px; font-weight: bold;"> Tel: (657) 246-2444</p><br>
-
-    <h4>Our Office</h4>
-    <p>
-      <strong>Advisory Services Associates, Inc.</strong><br />
-      1234 Grand Ave <br />
-      Los Angeles, CA 90000, USA
-    </p>
-        
-      </section>
-    </div>
-
+    <div class="scroll">
+      <section class="main">
+       <div class="container">
+         <article id="main-col">
+   
+     <h1> VIEW OUR COLLECTION</h1>
+   
+   </head>
+   
+   <body>
+     
+     <table>
+       <tr>
+         <td>
+           <div class="product-image">
+             <img src="danglers.jpg" alt="danglers earrings">
+           </div>
+         </td>
+   
+         <td>Earrings </td>
+         <td>$100</td>
+         <td><button class="add-to-cart-btn">Add to cart</button></td>
+       </tr>
+   
+       <tr>
+         <td>
+           <div class="product-image">
+             <img src="bracelet.jpg" alt="bracelet">
+           </div>
+         </td>
+   
+         <td>Bracelet</td>
+         <br>
+         <td>$100</td>
+         <td><button class="add-to-cart-btn">Add to cart</button></td>
+       </tr>
+   
+       <table>
+         <tr>
+           <td>
+             <div class="product-image">
+               <img src="necklace.jpg" alt="necklace">
+             </div>
+           </td>
+     
+           <td>Necklace </td>
+           <br>
+           <td>$100</td>
+           <td><button class="add-to-cart-btn">Add to cart</button></td>
+         </tr>
+   
+       
+     </table>
+     
+     <div class="container">
+       <h1>Your preferred method of contact</h1>
+       <form action="#" method="post">
+         <label for="contactType">Select Contact Type:</label>
+         <select id="contactType" name="contactType">
+             <option value="email">Email</option>
+             <option value="phone">Phone Number</option>
+         </select>
+   <br>
+       <label for="contactInfo">Enter Contact Information:</label>
+       <input type="text" id="contactInfo" name="contactInfo" placeholder="Enter your contact info" required>
+       <br>
+   
+       <button type="submit">Submit</button>
+     </form>
+   </div>
+   </section>
     
     <footer>
       <h6>&copy; 2024 Service. All rights reserved.</h6>
