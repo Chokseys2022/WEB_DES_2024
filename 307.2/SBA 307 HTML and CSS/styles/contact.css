@@ -1,0 +1,89 @@
+/* General Reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* CSS Variables */
+  :root {
+    --header-color: #00070d;
+    --content-color: #f1ebeb;
+    --accent-color-beigeish: #846d62;
+    --accent-color-brownish: #5a4d42;
+    --text-header-color: #f5fbfc;
+    --text-normal-color: #7f7f7f;
+  }
+  
+  /* Contact Us page-specific styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .form-cont {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2em;
+    background: var(--text-normal-color);
+  }
+  
+  .contact-button {
+    padding: 0.7em;
+    background-color: white;
+    color: darkgray;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  .contact-button:hover {
+    background-color: darkgray;
+    color: black;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background: var(--header-color);
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  nav .logo {
+    max-width: 80px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: var(--header-color);
+    color: #b0c4de;
+  }
+  

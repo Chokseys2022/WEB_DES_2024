@@ -1,0 +1,62 @@
+/* General Reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* CSS Variables */
+  :root {
+    --header-color: #00070d;
+    --content-color: #f1ebeb;
+    --accent-color-beigeish: #846d62;
+    --accent-color-brownish: #5a4d42;
+    --text-header-color: #f5fbfc;
+    --text-normal-color: #7f7f7f;
+  }
+  
+  /* About Us page-specific styles */
+  .about-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--text-normal-color);
+  }
+  
+  /* Header & Navigation */
+  header {
+    background: var(--header-color);
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  nav .logo {
+    max-width: 80px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: var(--header-color);
+    color: #b0c4de;
+  }
+  

@@ -1,9 +1,11 @@
-* {
+/* General Reset */
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* CSS Variables */
 :root {
   --header-color: #00070d;
   --content-color: #f1ebeb;
@@ -22,6 +24,7 @@ body {
   width: 100%;
 }
 
+/* Main container for index.html */
 .main-cont {
   width: 100%;
   min-height: 100vh;
@@ -46,13 +49,7 @@ body {
   background: var(--accent-color-beigeish);
 }
 
-.about-content {
-  width: 100%;
-  min-height: 100vh;
-  padding: 20px;
-  background: var(--text-normal-color);
-}
-
+/* Header & Navigation */
 header {
   background: var(--header-color);
   color: white;
@@ -82,59 +79,9 @@ nav ul li a {
   text-decoration: none;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1em;
-  width: 100%;
-  max-width: 600px;
-}
-
-.form-cont {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
-  padding: 2em;
-  background: var(--text-normal-color);
-}
-
-.contact-button {
-  padding: 0.7em;
-  background-color: white;
-  color: darkgray;
-  border: none;
-  border-radius: 4px;
-  width: 300px;
-}
-
-.contact-button:hover {
-  background-color: darkgray;
-  color: black;
-}
-
 footer {
   text-align: center;
   padding: 10px;
   background: var(--header-color);
   color: #b0c4de;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: var(--accent-color-beigeish);
-}
-
-a:hover,
-a:active {
-  text-decoration: underline;
-}
-
-p::first-letter {
-  color: var(--accent-color-beigeish);
-  font-size: xx-large;
 }
