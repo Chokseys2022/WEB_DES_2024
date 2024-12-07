@@ -1,5 +1,5 @@
 /* General Reset */
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -50,7 +50,6 @@ p::first-letter {
   font-size: xx-large;
 }
 
-
 .main-cont .learn-more:hover {
   background: var(--accent-color-beigeish);
 }
@@ -85,6 +84,11 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
+
+li {
+  list-style: none;
+}
+
 
 footer {
   text-align: center;
