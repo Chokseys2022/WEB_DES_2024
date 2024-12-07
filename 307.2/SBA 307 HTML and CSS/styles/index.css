@@ -45,6 +45,12 @@ body {
   border-radius: 5px;
 }
 
+p::first-letter {
+  color: var(--accent-color-beigeish);
+  font-size: xx-large;
+}
+
+
 .main-cont .learn-more:hover {
   background: var(--accent-color-beigeish);
 }
@@ -65,13 +71,14 @@ nav {
 }
 
 nav .logo {
-  max-width: 80px;
+  max-width: 120px;
+  min-height: 80%;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 50px;
 }
 
 nav ul li a {

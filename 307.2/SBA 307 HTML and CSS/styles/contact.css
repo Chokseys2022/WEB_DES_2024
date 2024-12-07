@@ -15,6 +15,12 @@
     --text-normal-color: #7f7f7f;
   }
   
+  h1::first-letter {
+    color: var(--accent-color-beigeish);
+    font-size: xx-large;
+  }
+  
+
   /* Contact Us page-specific styles */
   form {
     display: flex;
@@ -66,13 +72,14 @@
   }
   
   nav .logo {
-    max-width: 80px;
+    max-width: 120px;
+    min-height: 80px;
   }
   
   nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 50px;
   }
   
   nav ul li a {

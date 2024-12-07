@@ -23,6 +23,12 @@
     background: var(--text-normal-color);
   }
   
+  p::first-letter {
+    color: var(--accent-color-beigeish);
+    font-size: xx-large;
+  }
+  
+
   /* Header & Navigation */
   header {
     background: var(--header-color);
@@ -39,13 +45,14 @@
   }
   
   nav .logo {
-    max-width: 80px;
+    max-width: 120px;
+    min-height: 80%;
   }
   
   nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 50px;
   }
   
   nav ul li a {
