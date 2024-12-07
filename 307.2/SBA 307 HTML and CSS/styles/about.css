@@ -5,6 +5,8 @@
     box-sizing: border-box;
   }
   
+  
+
   /* CSS Variables */
   :root {
     --header-color: #00070d;
@@ -60,6 +62,42 @@
     text-decoration: none;
   }
   
+/* Main container using Flexbox */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  padding: 10px;
+  height: 100vh;
+}
+
+/* Individual cards for images & text */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
   footer {
     text-align: center;
     padding: 10px;
@@ -67,3 +105,38 @@
     color: #b0c4de;
   }
   
+
+  /*testimonial section*/
+  .testimonial-cont{
+    background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .testimonial-text{
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-auth{
+    font-size: 14px;
+    color: 333;
+    margin: 0;
+  }
+
+  /* Sidebar styles */
+  .sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
