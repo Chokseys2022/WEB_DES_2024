@@ -10,7 +10,7 @@
   --header-text-color: #ecf0f1;
   --body-bg-color: #ecf0f1;
   --main-text-color: #34495e;
-  --accent-color-primary: #e74c3c;
+  --accent-color-primary: #eddc70;
   --accent-color-secondary: #f39c12;
   --button-bg-color: #3498db;
   --button-hover-bg-color: #2980b9;
@@ -76,7 +76,7 @@ nav {
 }
 
 nav .logo {
-  max-width: 120px;
+  max-width: 150px;
   height: auto;
   gap: 20px;
 }
