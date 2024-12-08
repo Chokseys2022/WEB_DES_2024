@@ -1,96 +1,162 @@
 /* General Reset */
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* CSS Variables */
-  :root {
-    --header-color: #00070d;
-    --content-color: #f1ebeb;
-    --accent-color-beigeish: #846d62;
-    --accent-color-brownish: #5a4d42;
-    --text-header-color: #f5fbfc;
-    --text-normal-color: #7f7f7f;
-  }
-  
-  h1::first-letter {
-    color: var(--accent-color-beigeish);
-    font-size: xx-large;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Contact Us page-specific styles */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1em;
-    width: 100%;
-    max-width: 600px;
-  }
-  
-  .form-cont {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-    padding: 2em;
-    background: var(--text-normal-color);
-  }
-  
-  .contact-button {
-    padding: 0.7em;
-    background-color: white;
-    color: darkgray;
-    border: none;
-    border-radius: 4px;
-    width: 300px;
-  }
-  
-  .contact-button:hover {
-    background-color: darkgray;
-    color: black;
-  }
-  
-  /* Header & Navigation */
-  header {
-    background: var(--header-color);
-    color: white;
-    padding: 10px 0;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-  }
-  
-  nav .logo {
-    max-width: 120px;
-    min-height: 80px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background: var(--header-color);
-    color: #b0c4de;
-  }
-  
+/* CSS Variables */
+:root {
+  --header-color: #00070d;
+  --content-color: #f1ebeb;
+  --accent-color-beigeish: #846d62;
+  --accent-color-brownish: #5a4d42;
+  --text-header-color: #f5fbfc;
+  --text-normal-color: #7f7f7f;
+}
+
+/* Header & Navigation */
+header {
+  background: var(--header-color);
+  color: var(--text-header-color);
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: var(--text-header-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Main Section */
+.main {
+  padding: 2em;
+  background: var(--content-color);
+}
+
+h1 {
+  color: var(--accent-color-brownish);
+  margin-bottom: 1em;
+}
+
+h1::first-letter {
+  color: var(--accent-color-beigeish);
+  font-size: 2em;
+}
+
+/* Product Table */
+.product-table {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+}
+
+.product-table th,
+.product-table td {
+  padding: 1em;
+  text-align: left;
+}
+
+.product-table th {
+  background: var(--accent-color-beigeish);
+  color: var(--text-header-color);
+}
+
+.product-table img {
+  max-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.add-to-cart-btn {
+  padding: 0.7em;
+  background-color: var(--accent-color-beigeish);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--accent-color-brownish);
+}
+
+/* Form Styles */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.5em;
+  font-size: 1rem;
+  border: 1px solid var(--text-normal-color);
+  border-radius: 5px;
+}
+
+form button {
+  background: var(--accent-color-brownish);
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--accent-color-beigeish);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: var(--header-color);
+  color: var(--text-header-color);
+}
