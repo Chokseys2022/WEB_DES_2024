@@ -154,11 +154,11 @@ a:focus {
 }
 
 .abc {
-  background-color: yellow;
+  background-color: rgb(163, 208, 236);
   color: #00070d;
   padding: 20px;
   display: none;
-  transition: all 15s ease-out;
+  transition: color 2s ease-in-out; 
 }
 
 span:hover + .abc {
