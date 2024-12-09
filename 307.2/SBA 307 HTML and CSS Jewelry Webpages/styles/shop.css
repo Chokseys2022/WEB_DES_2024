@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-bg-color: #2c3e50;
+  --header-text-color: #ecf0f1;
+  --body-bg-color: #ecf0f1;
+  --main-text-color: #34495e;
+  --accent-color-primary: #eddc70;
+  --accent-color-secondary: #f39c12;
+  --button-bg-color: #3498db;
+  --button-hover-bg-color: #2980b9;
+  --footer-bg-color: #2c3e50;
+  --footer-text-color: #bdc3c7;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--body-bg-color);
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+/* Header & Navigation */
+header {
+  background: var(--header-bg-color);
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+nav .logo {
+  max-width: 150px;
+  height: auto;
+  gap: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--header-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color-primary);
+}
+
+a {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Main Section */
+.main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 h2 {
+  color: var(--main-text-color);
+}
+
+h1::first-letter {
+  color: var(--accent-color-beigeish);
+  font-size: 2em;
+}
+
+/* Product Table */
+.product-table {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+}
+
+.product-table th,
+.product-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.product-table th {
+  background: var(--accent-color-primary);
+  color: var(--text-header-color);
+  text-transform: uppercase;
+}
+
+.product-table tr:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.product-table img {
+  max-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.add-to-cart-btn {
+  padding: 0.7em;
+  background-color: var(--accent-color-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+/* Form Styles */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 0.8em;
+  font-size: 1rem;
+  border: 1px solid var(--main-text-color);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--main-text-color);
+}
+
+form button {
+  padding: 0.7em;
+  background-color: var(--accent-color-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: var(--button-hover-bg-color);
+  cursor: pointer;
+}
+
+form input:focus,
+form select:focus {
+  border-color: var(--accent-color-secondary);
+  outline: none;
+  box-shadow: 0 0 5px var(--accent-color-primary);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--footer-bg-color);
+  color: var(--footer-text-color);
+}

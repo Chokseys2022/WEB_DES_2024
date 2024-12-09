@@ -29,6 +29,30 @@ body {
   width: 100%;
 }
 
+/* Main Container */
+.main-cont {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px;
+  background: var(--text-normal-color);
+  color: var(--text-header-color);
+}
+
+.main-cont .learn-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: var(--header-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+
+
 .about-content {
   width: 100%;
   min-height: 100vh;
