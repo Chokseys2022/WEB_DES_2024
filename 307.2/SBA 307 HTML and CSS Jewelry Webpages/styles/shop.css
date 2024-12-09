@@ -10,7 +10,7 @@
   --header-text-color: #ecf0f1;
   --body-bg-color: #ecf0f1;
   --main-text-color: #34495e;
-  --accent-color-primary: #eddc70;
+  --accent-color-primary: rgb(237, 220, 112);
   --accent-color-secondary: #f39c12;
   --button-bg-color: #3498db;
   --button-hover-bg-color: #2980b9;
@@ -110,7 +110,7 @@ h1::first-letter {
   width: 100%;
   max-width: 900px;
   margin: auto;
-  border-collapse: collapse;
+  /*border-collapse: collapse;*/
   margin-bottom: 2em;
 }
 
@@ -118,21 +118,20 @@ h1::first-letter {
 .product-table td {
   padding: 15px;
   text-align: left;
-  border-bottom: 1px solid var(--main-text-color);
+  border-bottom: 1px dotted var(--main-text-color);
 }
 
 .product-table th {
   background: var(--accent-color-primary);
   color: var(--text-header-color);
-  text-transform: uppercase;
-}
+  }
 
 .product-table tr:hover {
   background: rgba(0, 0, 0, 0.05);
 }
 
 .product-table img {
-  max-width: 150px;
+  max-width: 235px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -171,7 +170,7 @@ h1::first-letter {
   display: flex;
   justify-content: center;
 }
-/* Form Styles */
+
 form {
   width: 100%;
   max-width: 600px;

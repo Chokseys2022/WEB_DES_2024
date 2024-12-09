@@ -103,6 +103,14 @@ nav ul li a:hover {
   color: var(--accent-color-primary);
 }
 
+.tagline {
+  text-align: center;
+  font-size: 0.75rem;
+  color: darkgray; 
+  margin: 10px 0;
+}
+
+
 .main-cont {
   max-width: 1200px;
   margin: auto;
