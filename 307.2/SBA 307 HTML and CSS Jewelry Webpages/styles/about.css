@@ -70,7 +70,7 @@ p::first-letter {
 /* Header & Navigation */
 header {
   background: var(--header-bg-color);
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 nav {
@@ -176,10 +176,10 @@ aside > p {
 }
 
 /* Footer */
-footer {
+footer h6 {
   text-align: center;
-  padding: 20px;
-  background: var(--footer-bg-color);
-  color: var(--footer-text-color);
+  font-size: 0.9rem;
+  color: #555;
+  margin: 10px 0;
 }
 
