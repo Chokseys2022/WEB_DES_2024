@@ -125,10 +125,6 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-/* Highlighted Links */
-.highlight {
-  color: var(--accent-color-primary);
-}
 
 a {
   flex: 1;

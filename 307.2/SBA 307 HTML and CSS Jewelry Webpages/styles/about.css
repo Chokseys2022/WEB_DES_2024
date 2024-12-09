@@ -76,6 +76,9 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+  color: var(--accent-color-primary);
+}
 
 a {
   flex: 1;
