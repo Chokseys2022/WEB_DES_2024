@@ -14,12 +14,15 @@ This is the initial website developed for a mock jewelry store, built using HTML
 
 ## File Structure
 
-assets              # Directory for images, logos, and other media assets
-pages               # Directory for additional HTML pages (e.g., About, Shop)
-styles              # Directory for CSS stylesheets
-index.css           # Main CSS file for styling
-index.html          # Home page HTML file
-README.md           # Project documentation
+| **Directory/File**               | **Description**                                 |
+|----------------------------------|-------------------------------------------------|
+| `assets/`                       | Directory for images, logos, and other media assets |
+| `pages/`                         | Directory for additional HTML pages (e.g., About, Shop) |
+| `styles/`                        | Directory for CSS stylesheets                   |
+| `index.css`                      | Main CSS file for styling                       |
+| `index.html`                     | Home page HTML file                              |
+| `README.md`                      | Project documentation                            |
+
 
 
 
