@@ -24,5 +24,6 @@ This is the initial website developed for a mock jewelry store, built using HTML
 | `README.md`                      | Project documentation                            |
 
 
-
+## Zipped File - SBA
+[[text](https://)](<../SBA 307 HTML and CSS Jewelry Webpages.zip>)
 
