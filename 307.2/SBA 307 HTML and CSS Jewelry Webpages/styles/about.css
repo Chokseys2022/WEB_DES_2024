@@ -104,6 +104,7 @@ nav ul li a:hover {
   color: var(--accent-color-primary);
 }
 
+
 a {
   flex: 1;
   background-color: #333;
@@ -160,6 +161,7 @@ a:focus {
 .card ul {
   list-style-type: none;
 }
+
 
 aside {
   width: 40%;
