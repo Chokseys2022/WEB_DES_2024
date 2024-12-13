@@ -13,3 +13,4 @@ This project calculates various details for a 1,500-mile trip, including:
 - Determines the duration of the trip in hours based on speed.
 
 ## Zipped Folder
+[ALAB 308.1.1 Data Manipulation With Javascript.zip](https://github.com/user-attachments/files/18129809/ALAB.308.1.1.Data.Manipulation.With.Javascript.zip)
