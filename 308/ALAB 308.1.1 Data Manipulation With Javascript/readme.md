@@ -1,4 +1,6 @@
-# Trip Calculator
+# ALAB 308.1.1 - Data Manipulation With Javascript
+
+## Trip Calculator
 
 This project calculates various details for a 1,500-mile trip, including:
 
