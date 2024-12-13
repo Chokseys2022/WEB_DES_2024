@@ -37,3 +37,33 @@ console.log(`The result of the arithmetic chain is: ${result}`);
 const num = 100;
 const isOver25 = num <= 25;
 console.log(isOver25);
+
+//PART 2: PRACTICAL MATH
+
+/*The distance of the trip, in total, is 1,500 miles.
+
+Your car’s fuel efficiency is as follows:
+At 55 miles per hour, you get 30 miles per gallon.
+At 60 miles per hour, you get 28 miles per gallon.
+At 75 miles per hour, you get 23 miles per gallon.
+You have a fuel budget of $175.
+The average cost of fuel is $3 per gallon.*/
+
+//How many gallons of fuel will you need for the entire trip?
+
+const dist = 1500;
+const fuelEffeciency55Miles = 30;
+const fuelNeeded = dist / fuelEffeciency55Miles;
+console.log(`You will need ${fuelNeeded} gallons of fuel for the trip.`);
+
+//Will your budget be enough to cover the fuel expense?
+const fuelBudget = 175;
+const fuelCostPerGal = 3;
+
+//How long will the trip take, in hours?*/
+//const dist = 1500;
+const speed = 55;
+
+const time = dist / speed;
+
+console.log(`The trip will take approximately ${time} hours.`);
