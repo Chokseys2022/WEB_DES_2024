@@ -1,6 +1,6 @@
 const PI = 3.1415;
 const radius = 5;
-const gardenArea = PI * radius * radius; .
+const gardenArea = PI * radius * radius; 
 const spaceForPlant = 0.8;
 const startingPlants = 20;
 const growthRate = 2;
