@@ -25,4 +25,6 @@ This is the initial website developed for a mock jewelry store, built using HTML
 
 
 ## Zipped File - SBA
-[text](307.2/SBA 307 HTML and CSS Jewelry Webpages.zip)
+[SBA 307 HTML and CSS Jewelry Webpages.zip](https://github.com/user-attachments/files/18129830/SBA.307.HTML.and.CSS.Jewelry.Webpages.zip)
+
+
