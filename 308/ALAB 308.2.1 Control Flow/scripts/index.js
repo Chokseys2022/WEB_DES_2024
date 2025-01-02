@@ -20,3 +20,28 @@ if (plantCount1wk > 0.8 * maxCapacity) {
 } else {
   console.log("Action: Plant more to use available space.");
 }
+// After 2 weeks
+const plantCount2wk = plantCount1wk * growthRate;
+
+console.log(`Plant count after 2 weeks is: ${plantCount2wk}`);
+
+if (plantCount2wk > 0.8 * maxCapacity) {
+  console.log("Action: Prune to prevent overcrowding.");
+} else if (plantCount2wk >= 0.5 * maxCapacity) {
+  console.log("Action: Monitor the growth rate.");
+} else {
+  console.log("Action: Plant more to use available space.");
+}
+
+// After 2 weeks
+const plantCount3wk = plantCount2wk * growthRate;
+
+console.log(`Plant count after 2 weeks is: ${plantCount3wk}`);
+
+if (plantCount3wk > 0.8 * maxCapacity) {
+  console.log("Action: Prune to prevent overcrowding.");
+} else if (plantCount3wk >= 0.5 * maxCapacity) {
+  console.log("Action: Monitor the growth rate.");
+} else {
+  console.log("Action: Plant more to use available space.");
+}
