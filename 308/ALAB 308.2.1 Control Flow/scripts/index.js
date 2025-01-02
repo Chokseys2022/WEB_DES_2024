@@ -33,7 +33,7 @@ if (plantCount2wk > 0.8 * maxCapacity) {
   console.log("Action: Plant more to use available space.");
 }
 
-// After 2 weeks
+// After 3 weeks
 const plantCount3wk = plantCount2wk * growthRate;
 
 console.log(`Plant count after 2 weeks is: ${plantCount3wk}`);
