@@ -66,11 +66,15 @@ console.log(cell1, cell2, cell3, cell4);
 There will only be 4 cells per row.
 There will be no escaped characters other than “\n”*/
 
-const csvStr = `ID,Name,Occupation,Age
+const csvString = `ID,Name,Occupation,Age
 42,Bruce,Knight,41
 57,Bob,Fry Cook,19
 63,Blaine,Quiz Master,58
 98,Bill,Doctor’s Assistant,26`;
 
-
+const rows = csvString.split('\n'); // Split into rows
+for (let row of rows) {
+    const cells = row.split(','); // Split each row into cells
+    console.log(...cells); // Log each cell
+}
 
