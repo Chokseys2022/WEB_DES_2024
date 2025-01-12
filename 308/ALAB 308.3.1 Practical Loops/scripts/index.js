@@ -47,7 +47,7 @@ while (true) {
 }
 
 /*Part 3: Feeling Loopy
-As a nal task, solve the following practical problem regarding string processing.
+As an additinal task, solve the following practical problem regarding string processing.
 Context: A CSV le, or “Comma-Separated Values” le is traditionally used to store tabular data. You
 may be familiar with CSVs through past use of programs such as Microsoft Excel or Google Sheets.
 While each of these programs save their data in dierent formats to preserve style (e.g., font color or
