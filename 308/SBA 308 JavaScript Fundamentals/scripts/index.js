@@ -181,7 +181,9 @@ function deductPercentageFromScore(submissions, percentage) {
 const updatedSubmissions = deductPercentageFromScore(learnerSubmissions, 10);
 console.log(updatedSubmissions);
 
+//************************************************************/
 //**********************OLD CODE******************************/
+//************************************************************/
 // The provided course information.
 // const courseInfo = {
 //   id: 451,
