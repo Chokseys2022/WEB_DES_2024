@@ -125,12 +125,34 @@ function logLearnerAverages(courseInfo, assignmentGroup, learnerSubmissions) {
 
   learnerIds.forEach(learnerId => {
     const averageScore = getLearnerAverageScore(learnerId, assignmentGroup.assignments, learnerSubmissions);
-    console.log(`Learner ID: ${learnerId}, Average Score: ${(averageScore * 100).toFiresultsed(2)}%`);
+    console.log(`Learner ID: ${learnerId}, Average Score: ${(averageScore * 100).toFixed(2)}%`);
   });
 }
 
 // Call the function to log the learner averages
 logLearnerAverages(courseInfo, assignmentGroup, learnerSubmissions);
+
+function submissionTimeline(assignments, submissions) {
+  submissions.forEach(submission => {
+    const assignment = assignments.find(assignment => assignment.id === submission.assignment_id);
+    if (assignment) {
+      const dueDate = new Date(assignment.due_at);
+      const submittedDate = new Date(submission.submission.submitted_at);
+
+      if (submittedDate <= dueDate) {
+        console.log(`Assignment ID ${assignment.id}: Turned in on time.`);
+      } else {
+        console.log(`Assignment ID ${assignment.id}: Late submission.`);
+      }
+    } else {
+      console.log(`Assignment ID ${submission.assignment_id}: Not found.`);
+    }
+  });
+}
+
+
+submissionTimeline(assignmentGroup.assignments, learnerSubmissions);
+
 
 
 //**********************OLD CODE******************************/
