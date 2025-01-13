@@ -61,10 +61,10 @@ To use these functions, define the required data structures (`courseInfo`, `assi
 - Ensure the course id matches the id in learner submissions.
 - Late submissions are penalized by deducting 10 percent of the assignment's points possible.
 
-## Download Pdf for assignment instructions
+## Assignment instructions
 
 [Download the Assignment PDF](./SBA.pdf)
 
 ## Github link
-[Visit the GitHub Repository](https://github.com/Chokseys2022/WEB_DES_2024/tree/main/308/SBA%20308%20JavaScript%20Fundamentals)
 
+[Visit the GitHub Repository](https://github.com/Chokseys2022/WEB_DES_2024/tree/main/308/SBA%20308%20JavaScript%20Fundamentals)
