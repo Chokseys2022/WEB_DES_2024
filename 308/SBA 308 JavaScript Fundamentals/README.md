@@ -65,3 +65,6 @@ To use these functions, define the required data structures (`courseInfo`, `assi
 
 [Download the Assignment PDF](./SBA.pdf)
 
+## Github link
+[Visit the GitHub Repository](https://github.com/Chokseys2022/WEB_DES_2024/tree/main/308/SBA%20308%20JavaScript%20Fundamentals)
+
