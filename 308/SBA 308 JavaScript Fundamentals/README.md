@@ -61,7 +61,7 @@ To use these functions, define the required data structures (`courseInfo`, `assi
 - Ensure the course id matches the id in learner submissions.
 - Late submissions are penalized by deducting 10 percent of the assignment's points possible.
 
-## Assignment instructions
+## Assignment Instructions
 
 [Download the Assignment PDF](./SBA.pdf)
 
