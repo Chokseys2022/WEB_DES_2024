@@ -1,4 +1,4 @@
-// The provided course information. 
+// The provided course information.
 const courseInfo = {
   id: 451,
   name: "Introduction to JavaScript",
@@ -81,14 +81,14 @@ function isValidCourseassignmentGroup(courseInfo, assignmentGroup) {
   try {
     // Check if the course_id matches
     if (courseInfo.id === assignmentGroup.course_id) {
-      // If IDs match, log success message
       console.log("ID matches");
     } else {
-      // If they don't match, throw an error
-      throw new Error("The assignment group does not belong to the specified course.");
+      // error msg if no match
+      throw new Error(
+        "The assignment group does not belong to the specified course."
+      );
     }
   } catch (error) {
-    // Catch the error and log it
     console.error(error.message);
   }
 }
@@ -96,45 +96,60 @@ function isValidCourseassignmentGroup(courseInfo, assignmentGroup) {
 isValidCourseassignmentGroup(courseInfo, assignmentGroup);
 
 // Calculate the learner's total score based on submissions.
-function  getLearnerAverageScore(learnerId, assignments, submissions) {
+function getLearnerAverageScore(learnerId, assignments, submissions) {
   let totalScore = 0;
   let totalPointsPossible = 0;
 
   // Filter submissions for the specific learner
-  const learnerSubmissions = submissions.filter(submission => submission.learner_id === learnerId);
+  const learnerSubmissions = submissions.filter(
+    (submission) => submission.learner_id === learnerId
+  );
 
   // Loop through each assignment and calculate score
-  assignments.forEach(assignment => {
-    const submission = learnerSubmissions.find(sub => sub.assignment_id === assignment.id);
+  assignments.forEach((assignment) => {
+    const submission = learnerSubmissions.find(
+      (sub) => sub.assignment_id === assignment.id
+    );
 
     if (submission) {
-      totalScore += submission.submission.score;
+      totalScore += submission.submission.score; // Add the score for the assignment.
       totalPointsPossible += assignment.points_possible;
     }
   });
 
+  // calculate the average if score is higher than 0
+  return totalPointsPossible > 0 ? totalScore / totalPointsPossible : 0;
+}
 
-   // If there were any valid submissions, calculate the average
-   return totalPointsPossible > 0 ? totalScore / totalPointsPossible : 0;
-  }
+// get average score for each learner
+function getLearnerAvg(courseInfo, assignmentGroup, learnerSubmissions) {
+  const learnerIds = [
+    ...new Set(learnerSubmissions.map((submission) => submission.learner_id)),
+  ];
 
-// Log the learner's ID and average score for each learner
-function logLearnerAverages(courseInfo, assignmentGroup, learnerSubmissions) {
-  // Process each learner's average score
-  const learnerIds = [...new Set(learnerSubmissions.map(submission => submission.learner_id))];
-
-  learnerIds.forEach(learnerId => {
-    const averageScore = getLearnerAverageScore(learnerId, assignmentGroup.assignments, learnerSubmissions);
-    console.log(`Learner ID: ${learnerId}, Average Score: ${(averageScore * 100).toFixed(2)}%`);
+  learnerIds.forEach((learnerId) => {
+    const averageScore = getLearnerAverageScore(
+      learnerId,
+      assignmentGroup.assignments,
+      learnerSubmissions
+    );
+    console.log(
+      `Learner ID: ${learnerId}, Average Score: ${(averageScore * 100).toFixed(
+        2
+      )}%` //Format the percentage to two decimal places
+    );
   });
 }
 
 // Call the function to log the learner averages
-logLearnerAverages(courseInfo, assignmentGroup, learnerSubmissions);
+getLearnerAvg(courseInfo, assignmentGroup, learnerSubmissions);
 
+// Function to check if submissions were turned in on time
 function submissionTimeline(assignments, submissions) {
-  submissions.forEach(submission => {
-    const assignment = assignments.find(assignment => assignment.id === submission.assignment_id);
+  submissions.forEach((submission) => {
+    const assignment = assignments.find(
+      (assignment) => assignment.id === submission.assignment_id
+    );
     if (assignment) {
       const dueDate = new Date(assignment.due_at);
       const submittedDate = new Date(submission.submission.submitted_at);
@@ -150,10 +165,21 @@ function submissionTimeline(assignments, submissions) {
   });
 }
 
-
 submissionTimeline(assignmentGroup.assignments, learnerSubmissions);
 
+//deduct 10% if late sub
+function deductPercentageFromScore(submissions, percentage) {
+  return submissions.map((submission) => {
+    const deduction = submission.submission.score * (percentage / 100);
+    const updatedScore = submission.submission.score - deduction;
+    submission.submission.score = updatedScore < 0 ? 0 : updatedScore; // Prevent negative scores
+    return submission;
+  });
+}
 
+//call function to minus 10% from learner scores
+const updatedSubmissions = deductPercentageFromScore(learnerSubmissions, 10);
+console.log(updatedSubmissions);
 
 //**********************OLD CODE******************************/
 // The provided course information.
@@ -161,7 +187,7 @@ submissionTimeline(assignmentGroup.assignments, learnerSubmissions);
 //   id: 451,
 //   name: "Introduction to JavaScript"
 //   };
-  
+
 //   // The provided assignment group.
 //   const assignmentGroup = {
 //   id: 12345,
@@ -189,7 +215,7 @@ submissionTimeline(assignmentGroup.assignments, learnerSubmissions);
 //   }
 //   ]
 //   };
-  
+
 //   // The provided learner submission data.
 //   const learnerSubmissions = [
 //   {
@@ -233,7 +259,6 @@ submissionTimeline(assignmentGroup.assignments, learnerSubmissions);
 //   }
 //   }
 //   ];
-    
 
 // // Adding functions here:
 // // Function to process learner data: we factor in the late assignments manually
@@ -307,5 +332,3 @@ submissionTimeline(assignmentGroup.assignments, learnerSubmissions);
 //       [assignment.id]: assignmentScore,
 //     });
 //     console.log(results);
-
-
