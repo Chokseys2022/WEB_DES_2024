@@ -145,3 +145,24 @@ learnerSubmissions.forEach((submission) => {
       );
     }
   });
+
+  const getLearnerAverageScore = (learnerId, assignments, submissions) => {
+    const learnerSubmissions = submissions.filter(
+      (submission) => submission.learner_id === learnerId
+    );
+  
+    let totalScore = 0;
+    let totalPointsPossible = 0;
+  
+    assignments.forEach((assignment) => {
+      const submission = learnerSubmissions.find(
+        (sub) => sub.assignment_id === assignment.id
+      );
+  
+      if (submission) {
+        totalScore += submission.submission.score;
+        totalPointsPossible += assignment.points_possible;
+      }
+    });
+  
+    return totalPointsPossible > 0 ? totalScore / totalPointsPossible : 0;}
