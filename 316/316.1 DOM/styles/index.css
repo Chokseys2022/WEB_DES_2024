@@ -4,3 +4,6 @@
     box-sizing: border-box;
 }
 
+[id="blog-post"] {
+    background: aliceblue;
+}
