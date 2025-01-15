@@ -17,6 +17,7 @@ const assignmentGroup = {
       due_at: "2023-01-25",
       points_possible: 50,
     },
+
     {
       id: 2,
       name: "Write a Function",
@@ -119,50 +120,50 @@ const assignmentMap = new Map(
 console.log("Valid Assignments:", validAssignments);
 console.log("Assignment Map:", Array.from(assignmentMap.entries()));
 
-
 // Process each learner's submission to get id, and submission details
 learnerSubmissions.forEach((submission) => {
-    const { learner_id, assignment_id, submission: sub } = submission;
-    //get the submission's submission time  and score
-    const { submitted_at, score } = sub;
-  
-    // Find the assignment details
-    const assignment = assignmentMap.get(assignment_id);
-    if (assignment) {
-      const { pointsPossible, dueAt } = assignment;
-  
-      let finalScore = score;
-  
-      // Check if submission is late and deduct points
-      const submittedAt = new Date(submitted_at);
-      if (submittedAt > new Date(dueAt)) {
-        finalScore = Math.max(0, finalScore - 0.1 * pointsPossible); // Deduct 10% if late
-      }
-  
-      console.log(
-        `Score for learner ${learner_id} on assignment ${assignment_id}:`,
-        finalScore
-      );
+  const { learner_id, assignment_id, submission: sub } = submission;
+  //get the submission's submission time  and score
+  const { submitted_at, score } = sub;
+
+  // Find the assignment details
+  const assignment = assignmentMap.get(assignment_id);
+  if (assignment) {
+    const { pointsPossible, dueAt } = assignment;
+
+    let finalScore = score;
+
+    // Check if submission is late and deduct points
+    const submittedAt = new Date(submitted_at);
+    if (submittedAt > new Date(dueAt)) {
+      finalScore = Math.max(0, finalScore - 0.1 * pointsPossible); // Deduct 10% if late
+    }
+
+    console.log(
+      `Score for learner ${learner_id} on assignment ${assignment_id}:`,
+      finalScore
+    );
+  }
+});
+
+const getLearnerAverageScore = (learnerId, assignments, submissions) => {
+  const learnerSubmissions = submissions.filter(
+    (submission) => submission.learner_id === learnerId
+  );
+
+  let totalScore = 0;
+  let totalPointsPossible = 0;
+
+  assignments.forEach((assignment) => {
+    const submission = learnerSubmissions.find(
+      (sub) => sub.assignment_id === assignment.id
+    );
+
+    if (submission) {
+      totalScore += submission.submission.score;
+      totalPointsPossible += assignment.points_possible;
     }
   });
 
-  const getLearnerAverageScore = (learnerId, assignments, submissions) => {
-    const learnerSubmissions = submissions.filter(
-      (submission) => submission.learner_id === learnerId
-    );
-  
-    let totalScore = 0;
-    let totalPointsPossible = 0;
-  
-    assignments.forEach((assignment) => {
-      const submission = learnerSubmissions.find(
-        (sub) => sub.assignment_id === assignment.id
-      );
-  
-      if (submission) {
-        totalScore += submission.submission.score;
-        totalPointsPossible += assignment.points_possible;
-      }
-    });
-  
-    return totalPointsPossible > 0 ? totalScore / totalPointsPossible : 0;}
+  return totalPointsPossible > 0 ? totalScore / totalPointsPossible : 0;
+};
