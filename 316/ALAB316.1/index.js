@@ -2,7 +2,7 @@
 // DOM Manipulation (Part One)
 
 // Menu data structure
-const menuLinks = [
+var menuLinks = [
   { text: "about", href: "/about" },
   { text: "catalog", href: "/catalog" },
   { text: "orders", href: "/orders" },
@@ -14,7 +14,7 @@ const menuLinks = [
 let mainEl = document.querySelector("main");
 
 // Set the background color of main element
-mainEl.style.backgroundColor = "const(--main-bg)";
+mainEl.style.backgroundColor = "var(--main-bg)";
 
 // Set the content of main element to header 1
 mainEl.innerHTML = "<h1>DOM Manipulation</h1>";
@@ -28,7 +28,7 @@ let topMenuEl = document.getElementById("top-menu");
 // add height of top menu element
 topMenuEl.style.height = "100%";
 // set background color of top menu element
-topMenuEl.style.backgroundColor = "const(--top-menu-bg)";
+topMenuEl.style.backgroundColor = "var(--top-menu-bg)";
 // Add a class of flex around to top menu
 topMenuEl.classList.add("flex-ctr");
 
@@ -36,7 +36,7 @@ topMenuEl.classList.add("flex-ctr");
 // Iterate over the menuLinks array
 menuLinks.forEach(function (link) {
   // Create a new <a> element
-  const linkElement = document.createElement("a");
+  var linkElement = document.createElement("a");
 
   // Set the href attribute
   linkElement.setAttribute("href", link.href);
@@ -47,4 +47,3 @@ menuLinks.forEach(function (link) {
   // Append the <a> element to the topMenuEl element
   topMenuEl.appendChild(linkElement);
 });
-//
