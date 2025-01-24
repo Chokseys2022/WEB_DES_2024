@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript HTML Events</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>JavaScript HTML Events</h1>
+    <h2>Display Date on Page Load</h2>
+
+    <p>The current time is:</p>
+    <p id="date"></p>
+
+    <p id="demo" onmouseover="displayRandomText()">
+      Hover over me for some random text!
+    </p>
+
+    <h2>Convert Input Text to Lowercase</h2>
+    <input
+      type="text"
+      id="lowercaseInput"
+      onchange="convertToLowercase()"
+      placeholder="Type something..."
+    />
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

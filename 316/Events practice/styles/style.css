@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+h1, h2 {
+  color: #4b0082; /* Purple color */
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+#demo {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#demo:hover {
+  background-color: #d3d3d3;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 2px solid #4b0082; /* Purple border */
+  border-radius: 5px;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #4b0082; /* Purple text */
+  margin-top: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #6a5acd; /* Slightly darker purple on focus */
+  box-shadow: 0 0 5px #6a5acd;
+}
