@@ -1,4 +1,3 @@
-// alerts for home aboy and contact buttons
 function navigateTo(section) {
   const sections = ["home", "about", "contact"];
 
@@ -9,14 +8,10 @@ function navigateTo(section) {
         window.alert("You are on the home page!");
         break;
       case "about":
-        window.alert(
-          "Thank you for visiting - this page is under construction!"
-        );
+        window.alert("Thank you for visiting - this page is under construction!");
         break;
       case "contact":
-        window.alert(
-          "Email us at: gehna.email.com or call 1(000)000-0000 to reach us"
-        );
+        window.alert("Email us at: gehna.email.com or call 1(000)000-0000 to reach us");
         break;
     }
   } else {
@@ -44,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       resetForm();
     }
   }
+
   // Function to get form values
   function getFormValues() {
     const nameInput = document.querySelector('input[name="name"]');
@@ -115,4 +111,14 @@ clearCartButton.addEventListener("click", function (event) {
   clearCart();
 });
 
-// **************************************END CODE********************************************************
+// Image Zoom Functionality
+document.querySelectorAll('.earring img').forEach(function(img) {
+  img.addEventListener('mouseenter', function() {
+    img.style.transform = 'scale(5)';
+    img.style.transition = 'transform 0.5s ease';
+  });
+
+  img.addEventListener('mouseleave', function() {
+    img.style.transform = 'scale(1)';
+  });
+});

@@ -155,4 +155,11 @@ footer {
   line-height: 3px;
 }
 
+
+.earring img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
 /* *******************************************END CODE******************************************************** */
