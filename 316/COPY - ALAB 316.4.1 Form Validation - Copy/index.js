@@ -12,23 +12,44 @@ function validateRegistrationForm(event) {
   const confirmPassword = document.getElementById('registerInputConfirmPassword').value;
   const termsCheckbox = document.getElementById('registerTermsCheckbox').checked;
 
+  // Clear previous error messages
+  clearErrorMessages();
+
+  let isValid = true;
+
+  // Check for empty fields
   if (!username || !email || !password || !confirmPassword) {
-    alert('Please fill out all fields.');
-    return;
+    showErrorMessage('All fields are required.', 'registerFormErrors');
+    isValid = false;
   }
 
+  // Email validation
+  if (!validateEmail(email)) {
+    showErrorMessage('Please enter a valid email address.', 'registerInputEmailError');
+    isValid = false;
+  }
+
+  // Password strength validation
+  if (!validatePassword(password)) {
+    showErrorMessage('Password must be at least 8 characters, contain one number and one special character.', 'registerInputPasswordError');
+    isValid = false;
+  }
+
+  // Check if passwords match
   if (password !== confirmPassword) {
-    alert('Passwords do not match.');
-    return;
+    showErrorMessage('Passwords do not match.', 'registerInputConfirmPasswordError');
+    isValid = false;
   }
 
+  // Check if terms are checked
   if (!termsCheckbox) {
-    alert('You must agree to the Terms of Use.');
-    return;
+    showErrorMessage('You must agree to the Terms of Use.', 'registerTermsCheckboxError');
+    isValid = false;
   }
 
-  alert('Registration successful!');
-  // Further processing can be added here
+  if (isValid) {
+    alert('Registration successful!');
+  }
 }
 
 // Login Form Validation
@@ -38,11 +59,40 @@ function validateLoginForm(event) {
   const username = document.getElementById('loginInputUsername').value.trim();
   const password = document.getElementById('loginInputPassword').value;
 
+  // Clear previous error messages
+  clearErrorMessages();
+
   if (!username || !password) {
-    alert('Please enter your username and password.');
+    showErrorMessage('Please enter your username and password.', 'loginFormErrors');
     return;
   }
 
   alert('Login successful!');
-  // Further processing can be added here
+}
+
+// Email Validation (simple regex)
+function validateEmail(email) {
+  const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  return regex.test(email);
+}
+
+// Password Validation (minimum 8 chars, at least one special character, one number)
+function validatePassword(password) {
+  const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  return regex.test(password);
+}
+
+// Show error message under the input field
+function showErrorMessage(message, id) {
+  const errorElement = document.getElementById(id);
+  if (errorElement) {
+    errorElement.textContent = message;
+    errorElement.style.color = 'red';
+  }
+}
+
+// Clear all error messages
+function clearErrorMessages() {
+  const errorMessages = document.querySelectorAll('.error-message');
+  errorMessages.forEach(message => message.textContent = '');
 }
