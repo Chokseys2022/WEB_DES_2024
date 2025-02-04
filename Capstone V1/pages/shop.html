@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/shop.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../assets/logo-stars.png" alt="Company Logo" class="logo" />
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="collection.html">Collection</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1>View Our Selection</h1>
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Overview</th>
+            <th>Cost</th>
+            <th>Purchase</th>
+            <th>View All</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="../assets/danglers.png" alt="Danglers Earrings" />
+            </td>
+            <td>
+              Add a touch of elegance with these timeless danglers. Perfect for
+              everyday wear or special occasions, these beautifully crafted
+              earrings blend sophistication and versatility to complement any
+              outfit.
+            </td>
+            <td>$100</td>
+            <td><button class="add-to-cart-btn">Add to Cart</button></td>
+            <td><button class="view-all-btn">View Collection</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../assets/bracelet2.png" alt="Bracelet" />
+            </td>
+            <td>
+              Designed with style and grace, this stunning bracelet features
+              versatile designs to seamlessly pair with casual or formal attire.
+              The perfect accessory to add charm to your look without
+              compromising comfort.
+            </td>
+            <td>$100</td>
+            <td><button class="add-to-cart-btn">Add to Cart</button></td>
+            <td><button class="view-all-btn">View Collection</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../assets/necklace.png" alt="Necklace" />
+            </td>
+            <td>
+              This eye-catching necklace offers effortless style with its sleek
+              design and refined elegance. A versatile addition to your jewelry
+              collection, it pairs beautifully with any neckline or outfit for
+              any season.
+            </td>
+            <td>$100</td>
+            <td><button class="add-to-cart-btn">Add to Cart</button></td>
+            <td><button class="view-all-btn">View Collection</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+     <div class="view-all"><a href="collection.html" class="view-all-btn">View Our Entire Collection</a></div>
+      <br><br>
+      <section>
+        <h1>Select Your Method of Contact</h1>
+        <form action="#" method="post">
+          <div>
+            <label for="userName">Enter Your Name:</label>
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div>
+            <label for="contactType">Select Contact Type:</label>
+            <select id="contactType" name="contactType">
+              <option value="email">Email</option>
+              <option value="phone">Phone Number</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="contactInfo">Enter Contact Information:</label>
+            <input
+              type="text"
+              id="contactInfo"
+              name="contactInfo"
+              placeholder="Enter your contact info here"
+            />
+          </div>
+
+          <div>
+            <p>Would you like a customer service representative to call you?</p>
+            <label>
+              <input type="radio" name="contactCall" value="yes" required /> Yes
+            </label>
+            <label>
+              <input type="radio" name="contactCall" value="no" required /> No
+            </label>
+          </div>
+
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h6>&copy; 2024 CELESTRA.  All rights reserved.</h6>
+    </footer>
+  </body>
+</html>
