@@ -42,7 +42,7 @@
               outfit.
             </td>
             <td>$100</td>
-            <td><button class="add-to-cart-btn">Add to Cart</button></td>
+            <td><button class="add-to-cart-btn" data-price="100">Add to Cart</button></td>
             <td><button class="view-all-btn">View Collection</button></td>
           </tr>
           <tr>
@@ -56,7 +56,7 @@
               compromising comfort.
             </td>
             <td>$100</td>
-            <td><button class="add-to-cart-btn">Add to Cart</button></td>
+            <td><button class="add-to-cart-btn" data-price="100">Add to Cart</button></td>
             <td><button class="view-all-btn">View Collection</button></td>
           </tr>
           <tr>
@@ -70,14 +70,35 @@
               any season.
             </td>
             <td>$100</td>
-            <td><button class="add-to-cart-btn">Add to Cart</button></td>
+            <td><button class="add-to-cart-btn" data-price="100">Add to Cart</button></td>
             <td><button class="view-all-btn">View Collection</button></td>
           </tr>
         </tbody>
       </table>
 
-     <div class="view-all"><a href="collection.html" class="view-all-btn">View Our Entire Collection</a></div>
-      <br><br>
+      <button id="show-total" class="button">Show Total</button>
+      <div id="total">Total: $0</div>
+
+      <script>
+        let total = 0;
+
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+          button.addEventListener('click', () => {
+            const price = parseInt(button.getAttribute('data-price'));
+            total += price;
+            alert('Item added to cart!');
+          });
+        });
+
+        document.getElementById('show-total').addEventListener('click', () => {
+          document.getElementById('total').innerText = `Total: $${total}`;
+        });
+      </script>
+
+      <div class="view-all">
+        <a href="collection.html" class="view-all-btn">View Our Entire Collection</a>
+      </div>
+      <br /><br />
       <section>
         <h1>Select Your Method of Contact</h1>
         <form action="#" method="post">
@@ -127,7 +148,7 @@
     </main>
 
     <footer>
-      <h6>&copy; 2024 CELESTRA.  All rights reserved.</h6>
+      <h6>&copy; 2024 CELESTRA. All rights reserved.</h6>
     </footer>
   </body>
 </html>
