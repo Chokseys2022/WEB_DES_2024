@@ -1,0 +1,114 @@
+/* Deals Section */
+
+/* Info Section */
+.info {
+    text-align: center;
+    padding: 60px 20px; /* Adjust padding for space */
+  
+}
+
+.info h1 {
+    font-size: 2.8rem; /* Larger text for the main title */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.info p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+
+.deals-section {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+.deal-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0; /* Remove bottom margin to reduce space */
+    transition: transform 0.3s ease-in-out;
+}
+.deal-item:hover {
+    transform: translateY(-5px);
+}
+.deal-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.deal-item h3 {
+    padding: 20px;
+    margin: 0;
+    font-size: 1.2rem;
+}
+.deal-item p {
+    padding: 0 20px 20px;
+    font-size: 1rem;
+}
+.deal-item .price {
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.deal-item .old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+.deal-item .discounted-price {
+    color: #e74c3c;
+}
+
+/* Grid Layout Adjustments */
+.row {
+    margin-right: 0;
+    margin-left: 0; /* Remove the spacing between columns */
+}
+
+.col-md-4 {
+    padding-right: 0;
+    padding-left: 0; /* Remove column padding to remove space between cards */
+}
+
+/* Optional: Remove gutter space from the container if necessary */
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+/* Add to Cart Button */
+.add-to-cart-btn {
+    margin-top: 15px; /* Space from the content above */
+    display: block;
+    width: 100%;
+    padding: 12px; /* Increased padding for better button size */
+    background-color: #05030d; /* Dark background */
+    color: white; /* White text */
+    text-align: center;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.1rem; /* Slightly larger text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effect */
+}
+
+/* Button Hover Effect */
+.add-to-cart-btn:hover {
+    background-color: #686666; /* Lighter background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Button Focus (when clicked) */
+.add-to-cart-btn:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px rgba(100, 100, 100, 0.7); /* Add a subtle shadow when focused */
+}
+
+/* Button Disabled State */
+.add-to-cart-btn:disabled {
+    background-color: #b0b0b0; /* Gray background for disabled button */
+    cursor: not-allowed; /* Prevent clicking */
+}
