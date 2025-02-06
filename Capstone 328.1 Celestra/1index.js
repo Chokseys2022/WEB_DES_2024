@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Celestra Jewelry website loaded!");
-});
-
-
 function navigateTo(section) {
     const sections = ["home", "about", "contact"];
   
@@ -127,6 +122,4 @@ function navigateTo(section) {
       img.style.transform = 'scale(1)';
     });
   });
-  
-
   

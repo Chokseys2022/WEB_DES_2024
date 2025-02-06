@@ -84,7 +84,7 @@
           <a href="order.html">Order Now</a>
           <a href="contact.html">Get in Touch</a>
         </nav>
-       
+
         <a href="../pages/cart.html">
           <img src="../assets/cart.png" alt="Shopping Cart" class="cart-icon" />
         </a>
@@ -93,11 +93,17 @@
 
     <!-- Main Content -->
     <main class="main">
-      <h5 style="text-align: center; font-weight: bold; font-style: italic; padding-top: 20px;">
+      <h5
+        style="
+          text-align: center;
+          font-weight: bold;
+          font-style: italic;
+          padding-top: 20px;
+        "
+      >
         Luxury Within Reach, Elegance for Every Occasion
       </h5>
       <table class="product-table">
-        
         <tbody>
           <tr>
             <td>
@@ -110,8 +116,15 @@
               outfit.
             </td>
             <td>$100</td>
-            <td><button class="add-to-cart-btn">Add to Cart</button></td>
-            <td><button class="view-all-btn">View Collection</button></td>
+            <td><button onclick="addToCart(500)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
           </tr>
           <tr>
             <td>
@@ -124,8 +137,15 @@
               compromising comfort.
             </td>
             <td>$100</td>
-            <td><button class="add-to-cart-btn">Add to Cart</button></td>
-            <td><button class="view-all-btn">View Collection</button></td>
+            <td><button onclick="addToCart(600)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
           </tr>
           <tr>
             <td>
@@ -138,65 +158,176 @@
               any season.
             </td>
             <td>$100</td>
-            <td><button class="add-to-cart-btn">Add to Cart</button></td>
-            <td><button class="view-all-btn">View Collection</button></td>
+            <td><button onclick="addToCart(600)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>
+              <img src="../assets/danglers.png" alt="Danglers Earrings" />
+            </td>
+            <td>
+              Add a touch of elegance with these timeless danglers. Perfect for
+              everyday wear or special occasions, these beautifully crafted
+              earrings blend sophistication and versatility to complement any
+              outfit.
+            </td>
+            <td>$100</td>
+            <td><button onclick="addToCart(500)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../assets/bracelet2.png" alt="Stylish Bracelet" />
+            </td>
+            <td>
+              Designed with style and grace, this stunning bracelet features
+              versatile designs to seamlessly pair with casual or formal attire.
+              The perfect accessory to add charm to your look without
+              compromising comfort.
+            </td>
+            <td>$100</td>
+            <td><button onclick="addToCart(600)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../assets/necklace.png" alt="Elegant Necklace" />
+            </td>
+            <td>
+              This eye-catching necklace offers effortless style with its sleek
+              design and refined elegance. A versatile addition to your jewelry
+              collection, it pairs beautifully with any neckline or outfit for
+              any season.
+            </td>
+            <td>$100</td>
+            <td><button onclick="addToCart(600)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>
+              <img src="../assets/danglers.png" alt="Danglers Earrings" />
+            </td>
+            <td>
+              Add a touch of elegance with these timeless danglers. Perfect for
+              everyday wear or special occasions, these beautifully crafted
+              earrings blend sophistication and versatility to complement any
+              outfit.
+            </td>
+            <td>$100</td>
+            <td><button onclick="addToCart(500)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../assets/bracelet2.png" alt="Stylish Bracelet" />
+            </td>
+            <td>
+              Designed with style and grace, this stunning bracelet features
+              versatile designs to seamlessly pair with casual or formal attire.
+              The perfect accessory to add charm to your look without
+              compromising comfort.
+            </td>
+            <td>$100</td>
+            <td><button onclick="addToCart(600)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../assets/necklace.png" alt="Elegant Necklace" />
+            </td>
+            <td>
+              This eye-catching necklace offers effortless style with its sleek
+              design and refined elegance. A versatile addition to your jewelry
+              collection, it pairs beautifully with any neckline or outfit for
+              any season.
+            </td>
+            <td>$100</td>
+            <td><button onclick="addToCart(600)">Add to Cart</button></td>
+            <td>
+              <select class="view-all-btn">
+                <option value="" disabled selected>Choose Color</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="rose-gold">Rose Gold</option>
+              </select>
+            </td>
           </tr>
         </tbody>
       </table>
 
-      <div class="view-all">
-        <a href="collection.html" class="view-all-btn"
-          >View Our Entire Collection</a
-        >
+      <div>
+        <!-- Cart Display Section -->
+        <div class="cart-container">
+          <h4>
+            Items in Cart:
+            <span class="price" style="color: black">
+              <i class="fa fa-shopping-cart"></i>
+              <b id="cart-item-count">0</b>
+            </span>
+          </h4>
+          <p>
+            Total
+            <span class="price" style="color: black">
+              <b id="cart-total">$0</b>
+            </span>
+            <!-- Clear Cart Button -->
+            <button id="clear-cart-button">Clear Cart</button>
+          </p>
+        </div>
       </div>
-      <br /><br />
-      <section>
-        <h1>Select Your Method of Contact</h1>
-        <form action="#" method="post">
-          <div>
-            <label for="userName">Enter Your Name:</label>
-            <input
-              type="text"
-              id="userName"
-              name="userName"
-              placeholder="Enter your full name"
-            />
-          </div>
-
-          <div>
-            <label for="contactType">Select Contact Type:</label>
-            <select id="contactType" name="contactType">
-              <option value="email">Email</option>
-              <option value="phone">Phone Number</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="contactInfo">Enter Contact Information:</label>
-            <input
-              type="text"
-              id="contactInfo"
-              name="contactInfo"
-              placeholder="Enter your contact info here"
-            />
-          </div>
-
-          <div>
-            <p>Would you like a customer service representative to call you?</p>
-            <label>
-              <input type="radio" name="contactCall" value="yes" required /> Yes
-            </label>
-            <label>
-              <input type="radio" name="contactCall" value="no" required /> No
-            </label>
-          </div>
-
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-      </section>
     </main>
+
+    <!-- Error Display Container for Form -->
+    <div id="formErrorDisplay"></div>
+
+    <!-- Error Display Container for Cart -->
+    <div id="cartErrorDisplay"></div>
 
     <!-- Footer -->
     <footer>

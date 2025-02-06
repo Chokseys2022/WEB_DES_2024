@@ -28,7 +28,7 @@
 
 .product-table th,
 .product-table td {
-  padding: 15px;
+  padding: 10px;
   text-align: left;
   border-bottom: 1px dotted var(--main-text-color);
 }
@@ -49,6 +49,7 @@
 }
 
 .add-to-cart-btn {
+  width: 100%;
   padding: 0.7em;
   background-color: var(--accent-color-primary);
   color: white;
@@ -64,15 +65,10 @@
 }
 
 .view-all-btn {
-  padding: 0.7em;
-  background-color: var(--accent-color-primary);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center; /* Aligns the text in the center if needed */
 }
+
 
 .view-all-btnn:hover {
   background-color: var(--button-hover-bg-color);
@@ -195,4 +191,36 @@ form select:focus {
 * {
   box-sizing: border-box;
   color: grey;
+}
+
+button {
+  background: whitesmoke;
+  color: rgb(117, 128, 0);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: #ffab40;
+}
+
+
+/* Cart Display Section at Top Right */
+.cart-container {
+  position: sticky;
+  top: 100px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  background-color: white; /* Optional: gives it a background */
+  padding: 15px; /* Optional: adds padding inside */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+  z-index: 1100; /* Ensure it stays on top of other elements */
+}
+
+/* Make sure the cart content doesn't overlap */
+.cart-container h4, .cart-container p {
+  margin: 0;
 }
