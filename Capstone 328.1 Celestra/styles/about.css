@@ -53,20 +53,20 @@ header {
   width: 24px;
   height: 24px;
 }
-.intro-text-v2 {
+.intro-text {
   font-size: 1.3rem;
   font-weight: 500;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #333;
   text-align: center;
   line-height: 1.7;
   margin: 20px auto;
-  padding: 0 20px; 
-  max-width: 750px; 
+  padding: 0 20px;
+  max-width: 750px;
   background-color: rgb(245, 241, 241);
 }
 
-.intro-text-v2 {
+.intro-text {
   font-style: italic; /* Subtle emphasis for elegance */
   letter-spacing: 0.5px;
   color: #2c2c2c; /* Darker tone for more refined look */
@@ -77,36 +77,46 @@ header {
   margin: 30px 0;
 }
 
-.card {
+.card-about {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
-  margin: 15px 0;
+  margin: 15px auto;
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
-.card img {
+.card-about img {
   width: 30%;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 20px;
+  border-radius: 25px;
+  margin-right: 10px;
   margin-bottom: 15px;
   float: left;
 }
 
-.card h3 {
+.card-about h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
   color: #222;
+  float: center;
 }
 
-.card p {
+.card-about p {
   font-size: 1rem;
   color: #555;
   line-height: 1.5;
+  float: right;
 }
+
+/* .card-about-about h6 {
+  position: absolute;
+  right: 150px;
+  width: 200px;
+  height: 120px;
+  border: 3px solid green;
+} */
 
 /* Footer */
 footer {

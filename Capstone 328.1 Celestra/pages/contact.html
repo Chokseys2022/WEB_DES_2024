@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact</h1>
+    
+    <h2>Sign up Today!</h2>
+
+    <form id="contact">
+      <input type="text" name="username" id="username" placeholder="Name" />
+
+      <input type="email" name="email" id="email" placeholder="Email" />
+
+      <input type="text" name="message" id="message" placeholder="Message" />
+      
+      <input type="submit" value="Send" />
+    </form>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="../scripts/sendEmail.js"></script>
+  </body>
+</html>
