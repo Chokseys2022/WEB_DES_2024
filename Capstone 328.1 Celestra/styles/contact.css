@@ -1,67 +1,80 @@
 /* Basic page styling */
 
-  /* Contact form container styling */
+/* Contact form container styling */
+#contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Styling for form labels */
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Styling for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Styling for the message textarea */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #5c6bc0;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3f51b5;
+}
+
+/* Add responsiveness for mobile */
+@media (max-width: 600px) {
   #contact-form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
+    padding: 20px;
   }
-  
-  /* Styling for form labels */
-  label {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 8px;
-    display: block;
-  }
-  
-  /* Styling for input fields */
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  /* Styling for the message textarea */
-  textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  
-  /* Submit button styling */
+
   input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    background-color: #5c6bc0;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    font-size: 14px;
   }
+}
+
+.side-info {
+  color: rgb(28, 76, 83);
+  font-size: 20px;
+  text-align: center;
+  justify-items: center;
+  width: 95vw;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0%;
+  margin: 20px;
+  display: block;
   
-  input[type="submit"]:hover {
-    background-color: #3f51b5;
-  }
-  
-  /* Add responsiveness for mobile */
-  @media (max-width: 600px) {
-    #contact-form {
-      padding: 20px;
-    }
-  
-    input[type="submit"] {
-      font-size: 14px;
-    }
-  }
-  
+}
