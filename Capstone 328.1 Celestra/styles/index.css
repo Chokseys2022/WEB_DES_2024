@@ -91,31 +91,32 @@ header {
 }
 
 .social-icons a {
-  width: 30px; /* Set a reasonable width */
-  height: 30px; /* Set a reasonable height */
+  width: 30px; 
+  height: 30px; 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border-radius: 50%;
   text-decoration: none;
-
   font-size: 16px;
 }
 
 .social-icons a img {
-  width: 50px; /* Ensures the image fits well */
-  height: 50px px;
+  width: 50px; 
+  height: 50px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 /* Footer */
-footer {
+/* footer {
   padding: 20px;
   text-align: center;
   background: #222;
-  color: white;
+  color: white;}
   position: relative; /* Make sure it's positioned normally in the page flow */
-}
+ */
 
 .footer-links {
   font-size: 12px;
@@ -124,7 +125,7 @@ footer {
 
 .footer-links a {
   text-decoration: none;
-  color: #333;
+  color: #faf6f6;
   margin: 0 5px;
 }
 
@@ -132,8 +133,13 @@ footer {
   text-decoration: underline;
 }
 
+.stay-connected-footer {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
 * {
   box-sizing: border-box;
+  color: grey;
 }
 /* Full-width input fields */
 input[type="text"],
