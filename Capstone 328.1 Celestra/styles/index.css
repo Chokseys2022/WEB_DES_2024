@@ -242,3 +242,57 @@ button:hover {
 .cancelbtn:hover {
   background-color: #d32f2f;
 }
+
+
+  /* Cancel and Sign Up Button Styles for home/index page*/
+  .clearfix {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center; 
+  }
+
+  .cancelbtn,
+  .signupbtn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    flex-grow: 1; /* Ensures buttons take up equal space */
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    min-width: 120px; /* Prevents buttons from becoming too narrow */
+    height: 50px; /* Set equal height for both buttons */
+  }
+
+  /* Cancel Button Styling */
+  .cancelbtn {
+    background-color: #f44336; /* Red background */
+    color: white;
+  }
+
+  .cancelbtn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+
+  /* Sign Up Button Styling */
+  .signupbtn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+  }
+
+  .signupbtn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+  }
+
+  /* Button focus effect */
+  .cancelbtn:focus,
+  .signupbtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Blue outline on focus */
+  }
+
