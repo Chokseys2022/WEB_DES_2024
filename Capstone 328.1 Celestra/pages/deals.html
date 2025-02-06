@@ -1,246 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Celestra Jewelry | Luxury Within Reach</title>
 
     <!-- External Stylesheet -->
-    <link rel="stylesheet" href="../styles/deals.css">
+    <link rel="stylesheet" href="../styles/deals.css" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- External JavaScript -->
     <script defer src="script.js"></script>
 
     <style>
-        /* Sticky Navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1050;
-            background: rgba(255, 255, 255, 0.95);
-            border-bottom: 2px solid #ddd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-        }
-        .nav-links a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-        .cart-icon {
-            width: 30px;
-            height: 30px;
-        }
-        body {
-            padding-top: 70px;
-        }
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: url('assets/hero-background.jpg') no-repeat center center/cover;
-            color: white;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        .carousel-item img {
-            width: 80%;
-            height: 400px;
-            margin: 0 auto;
-        }
-        .info-box {
-            background: #f9f9f9;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #222;
-            color: white;
-        }
-
-        
+      /* Navbar */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1050;
+        background: rgba(255, 255, 255, 0.95);
+        border-bottom: 2px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+      }
+      .nav-links a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+      .cart-icon {
+        width: 30px;
+        height: 30px;
+      }
+      body {
+        padding-top: 70px;
+      }
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: url("assets/hero-background.jpg") no-repeat center
+          center/cover;
+        color: white;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+      .carousel-item img {
+        width: 80%;
+        height: 400px;
+        margin: 0 auto;
+      }
+      .info-box {
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #222;
+        color: white;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Navbar -->
     <header>
-        <div class="promo-banner text-center bg-dark text-white py-2">✨ Flash Sale: Limited Time Offers! ✨<p>Deal ends in <span id="timer"></span></p>
+      <div class="promo-banner text-center bg-dark text-white py-2">
+        ✨ Flash Sale: Limited Time Offers! ✨
+        <p>Deal ends in <span id="timer"></span></p>
 
-            <script>
-                setInterval(() => document.getElementById("timer").textContent = new Date(new Date().getTime() + 5 * 24 * 60 * 60 * 1000).toISOString().substr(11, 8), 1000);
-            </script></div>
-        <div class="navbar">
-            <h1>Celestra Jewelry</h1>
-            <nav class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="shop.html">Shop</a>
-                <a href="deals.html">Deals</a>
-                <a href="about.html">About</a>
-                
-                <a href="order.html">Place Order</a>
-            </nav>
-            <a href="../pages/cart.html"><img src="../assets/cart.png" alt="Shopping Cart" class="cart-icon"></a>
-        </div>
+        <script>
+          setInterval(
+            () =>
+              (document.getElementById("timer").textContent = new Date(
+                new Date().getTime() + 5 * 24 * 60 * 60 * 1000
+              )
+                .toISOString()
+                .substr(11, 8)),
+            1000
+          );
+        </script>
+      </div>
+      <div class="navbar">
+        <h1>Celestra Jewelry</h1>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="deals.html">Deals</a>
+          <a href="about.html">About</a>
+
+          <a href="order.html">Place Order</a>
+        </nav>
+        <a href="../pages/cart.html"
+          ><img src="../assets/cart.png" alt="Shopping Cart" class="cart-icon"
+        /></a>
+      </div>
     </header>
 
-   <!-- Info Section -->
-<div class="info">
-    <h1>Luxury Jewelry at Unbeatable Prices</h1>
-    <p>Explore our exclusive deals on high-end pieces, available now!</p>
-    <p>Deal ends in <span id="timer"></span></p>
+    <!-- Info Section -->
+    <div class="info">
+      <h1>Luxury Jewelry at Unbeatable Prices</h1>
+      <p>Explore our exclusive deals on high-end pieces, available now!</p>
+      <p>Deal ends in <span id="timer"></span></p>
 
-<script>
-    setInterval(() => document.getElementById("timer").textContent = new Date(new Date().getTime() + 5 * 24 * 60 * 60 * 1000).toISOString().substr(11, 8), 1000);
-</script>
-
-</div>
-
+      <script>
+        setInterval(
+          () =>
+            (document.getElementById("timer").textContent = new Date(
+              new Date().getTime() + 5 * 24 * 60 * 60 * 1000
+            )
+              .toISOString()
+              .substr(11, 8)),
+          1000
+        );
+      </script>
+    </div>
 
     <!-- Deals Section -->
     <div class="deals-section container">
-        <!-- The h2 element is used to define a second-level heading, which is displayed in a larger font size than regular text. The class "mb-4" is used to add a margin bottom of 4rem (64px) to the element. The class "text-center" is used to center align the text. The text "Current Deals" is displayed in the h2 element. -->
-        <div class="row">
-            <!-- Deal Item 1 -->
-            <div class="col-md-4">
-                <div class="deal-item">
-                    <img src="../assets/bracelet2.png" alt="Necklace Deal">
-                    <h3>Elegant Diamond Necklace</h3>
-                    <p>A stunning necklace perfect for any occasion.</p>
-                    <div class="price">
-                        <span class="old-price">$500</span>
-                        <span class="discounted-price">$300</span>
-                    </div>
-                    <button class="add-to-cart-btn" onclick="addToCart('Elegant Diamond Necklace', 300)">Add to Cart</button>
-                </div>
+      <!-- The h2 element is used to define a second-level heading, which is displayed in a larger font size than regular text. The class "mb-4" is used to add a margin bottom of 4rem (64px) to the element. The class "text-center" is used to center align the text. The text "Current Deals" is displayed in the h2 element. -->
+      <div class="row">
+        <!-- Deal Item 1 -->
+        <div class="col-md-4">
+          <div class="deal-item">
+            <img src="../assets/bracelet2.png" alt="Necklace Deal" />
+            <h3>Elegant Diamond Necklace</h3>
+            <p>A stunning necklace perfect for any occasion.</p>
+            <div class="price">
+              <span class="old-price">$500</span>
+              <span class="discounted-price">$300</span>
             </div>
-            <!-- Deal Item 2 -->
-            <div class="col-md-4">
-                <div class="deal-item">
-                    <img src="../assets/bracelet1.png" alt="Bracelet Deal">
-                    <h3>Luxury Gold Bracelet</h3>
-                    <p>Designed for elegance and style.</p>
-                    <div class="price">
-                        <span class="old-price">$400</span>
-                        <span class="discounted-price">$250</span>
-                    </div>
-                    <button class="add-to-cart-btn" onclick="addToCart('Luxury Gold Bracelet', 250)">Add to Cart</button>
-                </div>
-            </div>
-            <!-- Deal Item 3 -->
-            <div class="col-md-4">
-                <div class="deal-item">
-                    <img src="../assets/danglers.png" alt="Earring Deal">
-                    <h3>Sparkling Diamond Earrings</h3>
-                    <p>Add sparkle to your everyday look with these earrings.</p>
-                    <div class="price">
-                        <span class="old-price">$300</span>
-                        <span class="discounted-price">$180</span>
-                    </div>
-                    <button class="add-to-cart-btn" onclick="addToCart('Sparkling Diamond Earrings', 180)">Add to Cart</button>
-                </div>
-            </div>
+            <button
+              class="add-to-cart-btn"
+              onclick="addToCart('Elegant Diamond Necklace', 300)"
+            >
+              Add to Cart
+            </button>
+          </div>
         </div>
+        <!-- Deal Item 2 -->
+        <div class="col-md-4">
+          <div class="deal-item">
+            <img src="../assets/bracelet1.png" alt="Bracelet Deal" />
+            <h3>Luxury Gold Bracelet</h3>
+            <p>Designed for elegance and style.</p>
+            <div class="price">
+              <span class="old-price">$400</span>
+              <span class="discounted-price">$250</span>
+            </div>
+            <button
+              class="add-to-cart-btn"
+              onclick="addToCart('Luxury Gold Bracelet', 250)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Deal Item 3 -->
+        <div class="col-md-4">
+          <div class="deal-item">
+            <img src="../assets/danglers.png" alt="Earring Deal" />
+            <h3>Sparkling Diamond Earrings</h3>
+            <p>Add sparkle to your everyday look with these earrings.</p>
+            <div class="price">
+              <span class="old-price">$300</span>
+              <span class="discounted-price">$180</span>
+            </div>
+            <button
+              class="add-to-cart-btn"
+              onclick="addToCart('Sparkling Diamond Earrings', 180)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="deals-section container">
-        <!-- The h2 element is used to define a second-level heading, which is displayed in a larger font size than regular text. The class "mb-4" is used to add a margin bottom of 4rem (64px) to the element. The class "text-center" is used to center align the text. The text "Current Deals" is displayed in the h2 element. -->
-        <div class="row">
-            <!-- Deal Item 1 -->
-            <div class="col-md-4">
-                <div class="deal-item">
-                    <img src="../assets/bracelet2.png" alt="Necklace Deal">
-                    <h3>Elegant Diamond Necklace</h3>
-                    <p>A stunning necklace perfect for any occasion.</p>
-                    <div class="price">
-                        <span class="old-price">$500</span>
-                        <span class="discounted-price">$300</span>
-                    </div>
-                    <button class="add-to-cart-btn" onclick="addToCart('Elegant Diamond Necklace', 300)">Add to Cart</button>
-                </div>
+      <!-- The h2 element is used to define a second-level heading, which is displayed in a larger font size than regular text. The class "mb-4" is used to add a margin bottom of 4rem (64px) to the element. The class "text-center" is used to center align the text. The text "Current Deals" is displayed in the h2 element. -->
+      <div class="row">
+        <!-- Deal Item 1 -->
+        <div class="col-md-4">
+          <div class="deal-item">
+            <img src="../assets/bracelet2.png" alt="Necklace Deal" />
+            <h3>Elegant Diamond Necklace</h3>
+            <p>A stunning necklace perfect for any occasion.</p>
+            <div class="price">
+              <span class="old-price">$500</span>
+              <span class="discounted-price">$300</span>
             </div>
-            <!-- Deal Item 2 -->
-            <div class="col-md-4">
-                <div class="deal-item">
-                    <img src="../assets/bracelet1.png" alt="Bracelet Deal">
-                    <h3>Luxury Gold Bracelet</h3>
-                    <p>Designed for elegance and style.</p>
-                    <div class="price">
-                        <span class="old-price">$400</span>
-                        <span class="discounted-price">$250</span>
-                    </div>
-                    <button class="add-to-cart-btn" onclick="addToCart('Luxury Gold Bracelet', 250)">Add to Cart</button>
-                </div>
-            </div>
-            <!-- Deal Item 3 -->
-            <div class="col-md-4">
-                <div class="deal-item">
-                    <img src="../assets/danglers.png" alt="Earring Deal">
-                    <h3>Sparkling Diamond Earrings</h3>
-                    <p>Add sparkle to your everyday look with these earrings.</p>
-                    <div class="price">
-                        <span class="old-price">$300</span>
-                        <span class="discounted-price">$180</span>
-                    </div>
-                    <button class="add-to-cart-btn" onclick="addToCart('Sparkling Diamond Earrings', 180)">Add to Cart</button>
-                </div>
-            </div>
+            <button
+              class="add-to-cart-btn"
+              onclick="addToCart('Elegant Diamond Necklace', 300)"
+            >
+              Add to Cart
+            </button>
+          </div>
         </div>
+        <!-- Deal Item 2 -->
+        <div class="col-md-4">
+          <div class="deal-item">
+            <img src="../assets/bracelet1.png" alt="Bracelet Deal" />
+            <h3>Luxury Gold Bracelet</h3>
+            <p>Designed for elegance and style.</p>
+            <div class="price">
+              <span class="old-price">$400</span>
+              <span class="discounted-price">$250</span>
+            </div>
+            <button
+              class="add-to-cart-btn"
+              onclick="addToCart('Luxury Gold Bracelet', 250)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Deal Item 3 -->
+        <div class="col-md-4">
+          <div class="deal-item">
+            <img src="../assets/danglers.png" alt="Earring Deal" />
+            <h3>Sparkling Diamond Earrings</h3>
+            <p>Add sparkle to your everyday look with these earrings.</p>
+            <div class="price">
+              <span class="old-price">$300</span>
+              <span class="discounted-price">$180</span>
+            </div>
+            <button
+              class="add-to-cart-btn"
+              onclick="addToCart('Sparkling Diamond Earrings', 180)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    
 
-   
-    
     <!-- JavaScript to Handle Adding to Cart -->
     <script>
-        function addToCart(productName, price) {
-            alert(`${productName} has been added to your cart for $${price}.`);
-        }
+      function addToCart(productName, price) {
+        alert(`${productName} has been added to your cart for $${price}.`);
+      }
     </script>
-<!-- Footer -->
-<footer>
-    <h2>Stay Connected</h2>
-    <div class="social-icons">
+    <!-- Footer -->
+    <footer>
+      <h2>Stay Connected</h2>
+      <div class="social-icons">
         <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-            <img src="assets/fb.png" alt="Facebook Icon">
+          <img src="assets/fb.png" alt="Facebook Icon" />
         </a>
         <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-            <img src="assets/ig.jpg" alt="Instagram Icon">
+          <img src="assets/ig.jpg" alt="Instagram Icon" />
         </a>
         <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
-            <img src="assets/tt.png" alt="TikTok Icon">
+          <img src="assets/tt.png" alt="TikTok Icon" />
         </a>
-    </div>
-    <div class="footer-links">
-        <a href="#">Customer Service</a> |
-        <a href="#">Return Policy</a> |
-        <a href="#">About Us</a> |
-        <a href="#">Contact</a> |
-        <a href="#">FAQs</a> |
-        <a href="#">Privacy Policy</a> |
+      </div>
+      <div class="footer-links">
+        <a href="#">Customer Service</a> | <a href="#">Return Policy</a> |
+        <a href="#">About Us</a> | <a href="#">Contact</a> |
+        <a href="#">FAQs</a> | <a href="#">Privacy Policy</a> |
         <a href="#">Live Chat</a>
-    </div>
-    <p>&copy; 2024 Celestra Jewelry, LLC. All Rights Reserved</p>
-</footer>
+      </div>
+      <p>&copy; 2024 Celestra Jewelry, LLC. All Rights Reserved</p>
+    </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
-

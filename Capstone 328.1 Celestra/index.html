@@ -19,37 +19,67 @@
     <script defer src="script.js"></script>
 
     <style>
-      /* Custom styles for different page sections like navbar, hero, and footer */
+      
+      /* Navbar */
       .navbar {
-        /* Styling for the sticky navigation bar */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1050;
+        background: rgba(255, 255, 255, 0.95);
+        border-bottom: 2px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
       }
+      .nav-links a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+      .cart-icon {
+        width: 30px;
+        height: 30px;
+      }
+      body {
+        padding-top: 70px;
+      }
+      /* Hero Section */
       .hero {
-        /* Hero section styling (background image, text alignment, etc.) */
+        text-align: center;
+        padding: 60px 20px;
+        background: url("assets/hero-background.jpg") no-repeat center
+          center/cover;
+        color: white;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-top: 10px;
       }
       .carousel-item img {
-        /* Carousel item image styling */
+        width: 80%;
+        height: 400px;
+        margin: 0 auto;
       }
       .info-box {
-        /* Info box styling (background color, text alignment) */
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
       }
       footer {
-        /* Footer styling (text alignment, background color, etc.) */
+        text-align: center;
+        padding: 20px;
+        background: #222;
+        color: white;
       }
-
-      /* Modal styling (sign up modal) */
-      .modal {
-        /* Modal background settings, positioning */
-      }
-      .modal-content {
-        /* Modal content box styling */
-      }
-      .close {
-        /* Close button styling for the modal */
-      }
-      .cancelbtn,
-      .signupbtn {
-        /* Buttons inside modal styling */
-      }
+    
     </style>
   </head>
   <body>

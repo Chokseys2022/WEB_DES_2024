@@ -1,10 +1,16 @@
-/* General Reset */
-* {
+/* Global Styles */
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding-top: 0;
+  background: var(--body-bg-color);
+  color: var(--main-text-color);
+  min-height: 100vh;
+  width: 100%;
 }
 
+/* Root Variables */
 :root {
   --header-bg-color: #2c3e50;
   --header-text-color: #ecf0f1;
@@ -18,22 +24,13 @@
   --footer-text-color: #bdc3c7;
 }
 
-/* Body Styling */
-body {
-  font-family: Arial, sans-serif;
-  background: var(--body-bg-color);
-  color: var(--main-text-color);
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  width: 100%;
-}
-/* Header & Navigation */
+/* Header */
 header {
-  background: var(--header-bg-color);
+  background-color: var(--header-bg-color);
   padding: 5px 0;
 }
 
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -54,10 +51,6 @@ nav ul {
   gap: 20px;
 }
 
-nav ul li {
-  list-style: none;
-}
-
 nav ul li a {
   color: var(--header-text-color);
   text-decoration: none;
@@ -70,7 +63,6 @@ nav ul li a:hover {
 }
 
 a {
-  flex: 1;
   background-color: #333;
   color: #fff;
   border: 1px solid;
@@ -101,7 +93,7 @@ h1 h2 {
 }
 
 h1::first-letter {
-  color: var(--accent-color-beigeish);
+  color: var(--accent-color-primary);
   font-size: 2em;
 }
 
@@ -110,7 +102,6 @@ h1::first-letter {
   width: 100%;
   max-width: 900px;
   margin: auto;
-  /*border-collapse: collapse;*/
   margin-bottom: 2em;
 }
 
@@ -123,8 +114,8 @@ h1::first-letter {
 
 .product-table th {
   background: var(--accent-color-primary);
-  color: var(--text-header-color);
-  }
+  color: var(--header-text-color);
+}
 
 .product-table tr:hover {
   background: rgba(0, 0, 0, 0.05);
@@ -136,21 +127,8 @@ h1::first-letter {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.add-to-cart-btn {
-  padding: 0.7em;
-  background-color: var(--accent-color-primary);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.add-to-cart-btn:hover {
-  background-color: var(--button-hover-bg-color);
-}
-
+/* Buttons */
+.add-to-cart-btn,
 .view-all-btn {
   padding: 0.7em;
   background-color: var(--accent-color-primary);
@@ -162,15 +140,17 @@ h1::first-letter {
   transition: background 0.3s ease;
 }
 
-.view-all-btnn:hover {
+.add-to-cart-btn:hover,
+.view-all-btn:hover {
   background-color: var(--button-hover-bg-color);
 }
 
-.view-all-btn{
+.view-all-btn {
   display: flex;
   justify-content: center;
 }
 
+/* Form */
 form {
   width: 100%;
   max-width: 600px;
@@ -207,7 +187,6 @@ form button {
 
 form button:hover {
   background: var(--button-hover-bg-color);
-  cursor: pointer;
 }
 
 form input:focus,
@@ -221,7 +200,17 @@ form select:focus {
 footer {
   text-align: center;
   font-size: 0.9rem;
-   margin: 10px 0;
+  margin: 10px 0;
   background: var(--footer-bg-color);
   color: var(--footer-text-color);
+}
+
+/* Promotional Banner */
+.promo-banner {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
 }
