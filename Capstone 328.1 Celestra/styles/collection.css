@@ -125,23 +125,71 @@ a:focus {
   color: #333;
 }
 
-/*gif*/
-.gif-cont {
+
+
+.stay-connected {
+  margin: 20px 0;
+}
+
+.stay-connected h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.social-icons {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 30px; 
+  height: 30px; 
+  display: flex;
   align-items: center;
-  justify-content: flex-start;
-  min-height: auto;
-  margin-bottom: 75px;
-  padding-bottom: 20px;
-  gap: 20px;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social-icons a img {
+  width: 50px; 
+  height: 50px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 /* Footer */
-footer h6 {
+/* footer {
+  padding: 20px;
   text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin: 10px 0;
+  background: #222;
+  color: white;}
+  position: relative; /* Make sure it's positioned normally in the page flow */
+ */
+
+.footer-links {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
+.footer-links a {
+  text-decoration: none;
+  color: #faf6f6;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.stay-connected-footer {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+* {
+  box-sizing: border-box;
+  color: grey;
+}

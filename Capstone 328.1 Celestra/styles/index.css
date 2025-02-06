@@ -141,7 +141,8 @@ header {
   box-sizing: border-box;
   color: grey;
 }
-/* Full-width input fields */
+
+/* Form Input Styles */
 input[type="text"],
 input[type="password"] {
   width: 100%;

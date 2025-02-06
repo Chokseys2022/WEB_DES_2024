@@ -118,59 +118,71 @@ header {
   border: 3px solid green;
 } */
 
-/* Footer */
-footer {
-  background-color: #222;
-  padding: 20px;
-  text-align: center;
-  color: white;
+.stay-connected {
+  margin: 20px 0;
 }
 
-footer h2 {
-  font-size: 20px;
-  margin-bottom: 15px;
+.stay-connected h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .social-icons a {
-  width: 40px;
-  height: 40px;
+  width: 30px; 
+  height: 30px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background-color: #fff;
-  transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.1);
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .social-icons a img {
-  width: 20px;
-  height: 20px;
+  width: 50px; 
+  height: 50px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.footer-links {
-  font-size: 14px;
-  margin-top: 10px;
+/* Footer */
+/* footer {
+  padding: 20px;
   text-align: center;
+  background: #222;
+  color: white;}
+  position: relative; /* Make sure it's positioned normally in the page flow */
+ */
+
+.footer-links {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 .footer-links a {
   text-decoration: none;
-  color: #ddd;
-  margin: 0 8px;
+  color: #faf6f6;
+  margin: 0 5px;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+.stay-connected-footer {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+* {
+  box-sizing: border-box;
+  color: grey;
 }
 
 /* Testimonial Section */
