@@ -194,9 +194,9 @@ form select:focus {
 }
 
 button {
-  background: whitesmoke;
-  color: rgb(117, 128, 0);
-  border: none;
+ 
+  color: black;
+  border: black;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -204,7 +204,8 @@ button {
 }
 
 button:hover {
-  background: #ffab40;
+  background: #060606;
+  color: white;
 }
 
 
