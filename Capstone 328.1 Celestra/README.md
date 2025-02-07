@@ -70,9 +70,9 @@ You can download the catalog by clicking the link below:
 
 ## Wireframe Design
 
-The wireframe for this project was created using [Figma](https://www.figma.com), a powerful tool for UI/UX design and prototyping. Figma allowed us to quickly iterate and design the website layout before moving into development. You can explore the design and prototypes in Figma to understand the structure and flow of the site.
+The wireframe for this project was created using [Figma](https://www.figma.com), a  tool for UI/UX design and prototyping. 
 
 [\[View the Wireframe in Figma](https://www.figma.com/design/sAnToF9takpg0n3psWk07b/Jewelry-Store-Wireframe?node-id=0-1&t=wMEJkwNDXY9rLiv2-1)]
 ## Navigation Bar Inspiration
 
-The navigation bar design on this website was inspired by the layout found on **[BlossomBox.com](https://www.blossombox.com)**. 
+The navigation bar design on this website was inspired by the layout found on **[Blossombox.com](https://www.blossombox.com)**. 
