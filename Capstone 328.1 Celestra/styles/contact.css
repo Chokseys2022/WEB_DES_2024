@@ -22,12 +22,12 @@ header {
 
 /* Contact form container styling */
 #contact-form {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
+  flex: 1; /* The form takes up available space */
+  max-width: 600px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for form labels */
@@ -106,6 +106,33 @@ input[type="submit"]:hover {
   margin-bottom: 10px;
   font-size: 18px;
 }
+/* Image Section */
+
+/* Contact container for form and image */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.contact-us-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Optional: Add border or shadow for better visual appearance */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Add padding or margin if needed */
+  padding: 10px;
+}
+
+/* Responsive behavior for the image */
+@media (max-width: 768px) {
+  .contact-us-image img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .social-icons {
   display: flex;
@@ -114,8 +141,8 @@ input[type="submit"]:hover {
 }
 
 .social-icons a {
-  width: 30px; 
-  height: 30px; 
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +151,7 @@ input[type="submit"]:hover {
 }
 
 .social-icons a img {
-  width: 50px; 
+  width: 50px;
   height: 50px;
   margin-bottom: 10px;
   align-items: center;
@@ -139,9 +166,7 @@ input[type="submit"]:hover {
   background: #222;
   color: white;}
   position: relative; /* Make sure it's positioned normally in the page flow */
- */
-
-.footer-links {
+*/ .footer-links {
   font-size: 12px;
   margin-top: 10px;
 }
