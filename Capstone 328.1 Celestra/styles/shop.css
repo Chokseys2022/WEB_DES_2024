@@ -30,16 +30,16 @@
 .product-table td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px dotted var(--main-text-color);
+  /* border-bottom: 1px dotted var(--main-text-color); */
 }
 
-.product-table th {
+/* .product-table th {
   background: var(--accent-color-primary);
   color: var(--text-header-color);
-}
+} */
 
 .product-table tr:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(86, 13, 13, 0.05);
 }
 
 .product-table img {
@@ -51,22 +51,22 @@
 .add-to-cart-btn {
   width: 100%;
   padding: 0.7em;
-  background-color: var(--accent-color-primary);
+  /* background-color: var(--accent-color-primary); */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
-}
+} */
 
-.add-to-cart-btn:hover {
+/* .add-to-cart-btn:hover {
   background-color: var(--button-hover-bg-color);
 }
 
-.view-all-btn {
+/* .view-all-btn {
   display: flex;
-  justify-content: center; /* Aligns the text in the center if needed */
+  justify-content: center; 
 }
 
 
@@ -77,7 +77,8 @@
 .view-all-btn {
   display: flex;
   justify-content: center;
-}
+} */
+
 
 form {
   width: 100%;
@@ -107,7 +108,7 @@ form button {
   background-color: var(--accent-color-primary);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
