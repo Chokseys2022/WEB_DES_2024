@@ -75,4 +75,4 @@ The wireframe for this project was created using [Figma](https://www.figma.com),
 [\[View the Wireframe in Figma](https://www.figma.com/design/sAnToF9takpg0n3psWk07b/Jewelry-Store-Wireframe?node-id=0-1&t=wMEJkwNDXY9rLiv2-1)]
 ## Navigation Bar Inspiration
 
-The navigation bar design on this website was inspired by the layout found on **[blossomboxjewelry.com/](https:/blossomboxjewelry.com)**. 
+The navigation bar design on this website was inspired by the layout found on **[blossomboxjewelry.com](https:/blossomboxjewelry.com)**. 
