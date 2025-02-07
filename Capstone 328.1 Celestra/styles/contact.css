@@ -9,7 +9,7 @@ body {
 .promo-banner {
   background-color: #d3d3d3;
   text-align: center;
-  padding: 5px 0;
+  padding: 3px 0;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -94,7 +94,7 @@ input[type="submit"]:hover {
   padding: 10px;
   padding-bottom: 0px;
   margin-bottom: 0%;
-  margin: 20px;
+  
   display: block;
 }
 
@@ -111,9 +111,9 @@ input[type="submit"]:hover {
 /* Contact container for form and image */
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   gap: 20px;
 }
 .contact-us-image img {
