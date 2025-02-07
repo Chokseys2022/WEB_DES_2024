@@ -189,7 +189,7 @@ button {
 }
 
 button:hover {
-  opacity: 1;
+  background-color: #769188;
 }
 
 /* Extra styles for the cancel button */
